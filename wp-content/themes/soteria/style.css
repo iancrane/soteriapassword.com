@@ -22,7 +22,7 @@ body{
 	color: #333;
 	font-weight: 300;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	background: url('/wp-content/themes/soteria/images/bg.jpg');
+	background: url('images/bg.jpg');
 }
 
 img{
@@ -53,7 +53,7 @@ strong{font-weight:bold}
 	font-size: 32px;
 	text-align: center;
 	font-weight: bold;
-	background: url('/wp-content/themes/soteria/images/buttons-big.png') -10px -6px no-repeat;
+	background: url('images/buttons-big.png') -10px -6px no-repeat;
 }
 .big-button:hover,
 .small-button:hover{
@@ -74,7 +74,7 @@ input[type="submit"]{
 	text-align: center;
 	font-weight: bold;
 	cursor: pointer;
-	background: url('/wp-content/themes/soteria/images/buttons-little.png') -10px -6px no-repeat;
+	background: url('images/buttons-little.png') -10px -6px no-repeat;
 }
 input[type="submit"]{border:none;padding:14px 0 34px;float:right;font-size:18px}
 
@@ -116,7 +116,7 @@ h3 {
 	min-height: 430px;
 	margin: 0 auto;
 	padding-top: 10px;
-	background: url('/wp-content/themes/soteria/images/screenshots.png') bottom right no-repeat;
+	background: url('images/screenshots.png') bottom right no-repeat;
 }
 #header ul.some{margin-left:50px;}
 #header ul.some li{list-style:none;float:left;margin:2px;}
@@ -127,7 +127,7 @@ h3 {
 	font-size: 1px;
 	font-size: 0px;
 	text-indent: -5000px;
-	background: url('/wp-content/themes/soteria/images/some.png') no-repeat;
+	background: url('images/some.png') no-repeat;
 }
 #header ul.some li a.fb{background-position: 0px 0px;}
 #header ul.some li a.tw{background-position: -27px 0px;}
@@ -144,7 +144,7 @@ h3 {
 
 #topTitle{
 	height: 450px;
-	background: url(/wp-content/themes/soteria/images/caption.png) no-repeat 70px 250px;
+	background: url(images/caption.png) no-repeat 70px 250px;
 }
 #topTitle h1{
 	height: 135px;
@@ -160,7 +160,7 @@ h3 {
 	font-size: 1px;
 	font-size: 0px;
 	text-indent: 5000px;
-	background: url(/wp-content/themes/soteria/images/logo.png) no-repeat top left;
+	background: url(images/logo.png) no-repeat top left;
 }
 #topNav{width:100%;}
 
@@ -231,13 +231,13 @@ box-shadow: inset 1px 1px 3px #777;
 	box-shadow: 0 0 5px #000;
 	border-top: 2px solid #555;
 	border-bottom: 1px solid #777;
-	background: url('/wp-content/themes/soteria/images/greybg.jpg');
+	background: url('images/greybg.jpg');
 }
 #content .content-container{
 	width: 740px;
 	margin: auto;
 	padding: 50px 160px;
-	background:url('/wp-content/themes/soteria/images/glow-line.png') center top repeat-y;
+	background:url('images/glow-line.png') center top repeat-y;
 }
 
 #usercontent{
@@ -246,7 +246,7 @@ box-shadow: inset 1px 1px 3px #777;
 	margin: 50px auto 0px;
 }
 #content.home div.topcontent{
-	background:url('/wp-content/themes/soteria/images/glow-line.png') center top repeat-y;
+	background:url('images/glow-line.png') center top repeat-y;
 	padding: 20px 0;
 }
 #content.home div.topcontent .content{
@@ -287,13 +287,13 @@ div.testimonials_solution_widget strong span{
 	height: 70px;
 	margin: -30px 0 0 -20px;
 	position: absolute;
-	background: url('/wp-content/themes/soteria/images/open-quote.png') center center no-repeat;
+	background: url('images/open-quote.png') center center no-repeat;
 }
 #content.home div.topcontent div.close-quote{
 	width: 84px;
 	height: 70px;
 	margin: -35px 0 0 230px;
-	background: url('/wp-content/themes/soteria/images/close-quote.png') center center no-repeat;
+	background: url('images/close-quote.png') center center no-repeat;
 }
 #mc_embed_signup {
 	width: 200px;
@@ -318,7 +318,7 @@ div.testimonials_solution_widget strong span{
 	border-top: 1px solid #777;
 	border-bottom: 1px solid #888;
 	box-shadow: inset 0px 0px 3px #111;
-	background: url('/wp-content/themes/soteria/images/lightgreybg.jpg');
+	background: url('images/lightgreybg.jpg');
 }
 #content.home #usercontent div.content p{
 	font-size: 24px;
@@ -333,7 +333,7 @@ div.testimonials_solution_widget strong span{
 }
 #content.home p.buttons{text-align:center;}
 #content.home div.bottomcontent{
-	background:url('/wp-content/themes/soteria/images/glow-line.png') center top repeat-y;
+	background:url('images/glow-line.png') center top repeat-y;
 }
 #content.home div.bottomcontent div.content-block{
 	clear: both;
