@@ -1,0 +1,385 @@
+/* 
+Theme Name: Soteria Password
+Theme URL: http://elliottdesign.us/
+Description: Soteria Website 1.0
+Author: Elliott Design/Taylor Vincelli
+Version: 1.0
+*/
+
+/* css to zero out the browser */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption, {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}
+caption {text-align:left;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after {content: "";}
+blockquote, q {quotes: "" "";}
+*{margin:0;padding:0;}
+/* css to zero out the browser end*/
+
+body{
+	height: 100%;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #333;
+	font-weight: 300;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: url('/wp-content/themes/soteria/images/bg.jpg');
+}
+
+img{
+	border-style:none;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+p{
+	padding-bottom: 1em;
+	line-height: 150%;
+}
+	
+strong{font-weight:bold}
+
+.big-button{
+	display: inline-block;
+	height: 20px;
+	width: 253px;
+	padding: 34px 0;
+	color: #fefefe;
+	font-size: 32px;
+	text-align: center;
+	font-weight: bold;
+	background: url('/wp-content/themes/soteria/images/buttons-big.png') -10px -6px no-repeat;
+}
+.big-button:hover,
+.small-button:hover{
+	text-decoration:none;
+	background-position: -310px -6px;
+}
+.small-button:hover, input[type="submit"]:hover{background-position: -167px -6px;}
+.big-button:active{background-position: -610px -6px;}
+.small-button:active, input[type="submit"]:active{background-position: -328px -6px;}
+.small-button,
+input[type="submit"]{
+	display: inline-block;
+	font-size: 14px;
+	height: 16px;
+	width: 135px;
+	padding: 17px 0;
+	color: #fefefe;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: url('/wp-content/themes/soteria/images/buttons-little.png') -10px -6px no-repeat;
+}
+input[type="submit"]{border:none;padding:14px 0 34px;float:right;font-size:18px}
+
+.alignleft {
+	float: left;
+	margin-right: 10px;
+}
+.alignright {
+	float: right;
+	margin-left: 10px;
+}
+.aligncenter {
+	display: block;
+	margin: auto;
+	}
+.clear {
+	clear: both;
+}
+
+h1 {
+	font-size: 2em;
+	}
+
+h2 {
+	font-size: 1.8em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin-bottom: 5px;
+	}
+
+h3 {
+	font-size: 1.4em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	}
+
+/***************HEADER & NAV****************/
+
+#header{
+	width: 1050px;
+	min-height: 430px;
+	margin: 0 auto;
+	padding-top: 10px;
+	background: url('/wp-content/themes/soteria/images/screenshots.png') bottom right no-repeat;
+}
+#header ul.some{margin-left:50px;}
+#header ul.some li{list-style:none;float:left;margin:2px;}
+#header ul.some li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 1px;
+	font-size: 0px;
+	text-indent: -5000px;
+	background: url('/wp-content/themes/soteria/images/some.png') no-repeat;
+}
+#header ul.some li a.fb{background-position: 0px 0px;}
+#header ul.some li a.tw{background-position: -27px 0px;}
+#header ul.some li a.li{background-position: -60px 0px;}
+#header ul.some li a.yt{background-position: -93px 0px;}
+#header ul.some li a.gp{background-position: -127px 0px;}
+#header ul.some li a.rss{background-position: -157px 0px;}
+#header ul.some li a.fb:hover{background-position: 0px -31px;}
+#header ul.some li a.tw:hover{background-position: -27px -31px;}
+#header ul.some li a.li:hover{background-position: -60px -31px;}
+#header ul.some li a.yt:hover{background-position: -93px -31px;}
+#header ul.some li a.gp:hover{background-position: -127px -31px;}
+#header ul.some li a.rss:hover{background-position: -157px -31px;}
+
+#topTitle{
+	height: 450px;
+	background: url(/wp-content/themes/soteria/images/caption.png) no-repeat 70px 250px;
+}
+#topTitle h1{
+	height: 135px;
+	width: 280px;
+	font-size: 1px;
+	font-size: 0px;
+	text-indent: 5000px;
+}
+#topTitle h1 a{
+	display:block;
+	height: 135px;
+	width: 280px;
+	font-size: 1px;
+	font-size: 0px;
+	text-indent: 5000px;
+	background: url(/wp-content/themes/soteria/images/logo.png) no-repeat top left;
+}
+#topNav{width:100%;}
+
+/*************** NAV Level 1 ****************/
+.menu-main-menu-container {
+	margin:auto;
+}
+.menu li {
+	list-style-type:none;
+	display: inline;
+	padding-right:20px;
+}
+/*-----Sub Nav-----*/
+.menu li ul{
+	display:none;
+	position:absolute;
+	width:100px;
+}
+.menu li:hover ul, .menu li ul:hover{
+	display:block;
+}
+.menu li ul li{
+	width:100px;
+}
+/*-----Sub Sub Nav-----*/
+.menu li:hover ul li ul{
+	display:none;
+}
+.menu li ul li:hover ul, .menu li ul li ul:hover {
+	display:block;
+}
+.menu li ul li ul{
+	margin-left:50px;
+	margin-top:-15px;
+	position:relative;
+}
+
+/***************SIDEBAR****************/	
+
+#sidebar{
+	width:200px;
+	float:right;
+}
+
+#sidebar ul{
+	list-style:none;
+}
+
+/***************CONTENT****************/
+
+input[type="text"], textarea{
+width: 93%;
+margin: 5px;
+padding: 8px 3px !important;
+font-size: 16px;
+border-width: 1px;
+border-radius: 5px;
+box-shadow: inset 1px 1px 3px #777;
+}
+
+
+#container{
+}
+	
+#content{
+	width: 100%;
+	margin: 0 auto 10px;
+	box-shadow: 0 0 5px #000;
+	border-top: 2px solid #555;
+	border-bottom: 1px solid #777;
+	background: url('/wp-content/themes/soteria/images/greybg.jpg');
+}
+#content .content-container{
+	width: 740px;
+	margin: auto;
+	padding: 50px 160px;
+	background:url('/wp-content/themes/soteria/images/glow-line.png') center top repeat-y;
+}
+
+#usercontent{
+	float: left;
+	padding: 10px 15px;
+	margin: 50px auto 0px;
+}
+#content.home div.topcontent{
+	background:url('/wp-content/themes/soteria/images/glow-line.png') center top repeat-y;
+	padding: 20px 0;
+}
+#content.home div.topcontent .content{
+	width: 960px;
+	margin: 0 auto;
+}
+#content.home div.topcontent .content ul{
+	line-height: 210%;
+}
+
+div.widget{
+	width: 350px;
+	float: left;
+}
+div.widget.widget_text{
+	width: 300px;
+	margin-left: 20px;
+}
+div.testimonials_solution_widget{margin-right:50px;}
+div.testimonials_solution_widget strong{
+	display: block;
+	font-size: 14px;
+	text-align: right;
+}
+div.testimonials_solution_widget strong span{
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+}
+#content.home div.topcontent .testimonials_solution_widget {
+	border:1px solid #777;
+	border-radius: 4px;
+	line-height: 140%;
+	padding: 35px 15px 20px;
+}
+#content.home div.topcontent div.open-quote{
+	width: 84px;
+	height: 70px;
+	margin: -30px 0 0 -20px;
+	position: absolute;
+	background: url('/wp-content/themes/soteria/images/open-quote.png') center center no-repeat;
+}
+#content.home div.topcontent div.close-quote{
+	width: 84px;
+	height: 70px;
+	margin: -35px 0 0 230px;
+	background: url('/wp-content/themes/soteria/images/close-quote.png') center center no-repeat;
+}
+#mc_embed_signup {
+	width: 200px;
+	float: right;
+}
+#mc_embed_signup h3{text-align:center}
+.some_fields input{
+	width: 93%;
+	margin: 5px;
+	padding: 8px 3px;
+	font-size: 16px;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 3px #777;
+}
+
+#content.home #usercontent{
+	float: none;
+	width: 100%;
+	padding: 20px 0;
+	margin: 0 auto;
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #888;
+	box-shadow: inset 0px 0px 3px #111;
+	background: url('/wp-content/themes/soteria/images/lightgreybg.jpg');
+}
+#content.home #usercontent div.content p{
+	font-size: 24px;
+	line-height: 160%;
+	text-align: center;
+	padding-bottom: 0;
+	font-family: 'Lato', sans-serif;
+}
+#content.home #usercontent div.content{
+	width: 900px;
+	margin: 0 auto;
+}
+#content.home p.buttons{text-align:center;}
+#content.home div.bottomcontent{
+	background:url('/wp-content/themes/soteria/images/glow-line.png') center top repeat-y;
+}
+#content.home div.bottomcontent div.content-block{
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+#content.home div.bottomcontent div.content-block div.content{padding:20px 10px;}
+#content.home div.bottomcontent div.content-block  p{line-height:170%}
+#content.home div.bottomcontent div.content-block  h3{
+	color: #111;
+	font-size: 1.6em;
+}
+#content.home div.bottomcontent div.content-block.left div.media{
+	float: left;
+	margin-right: 35px;
+	border: 4px solid #fefefe;
+	box-shadow: 0 0 7px #333;
+}
+#content.home div.bottomcontent div.content-block.right{text-align:right;}
+#content.home div.bottomcontent div.content-block.right div.media{
+	float: right;
+	margin-left: 35px;
+	border: 4px solid #fefefe;
+	box-shadow: 0 0 7px #333;
+}
+#content ul, #content ol{
+	margin: 10px 0 10px 20px;
+}
+
+
+.sitemap{
+	display:inline;
+	list-style:none;
+}
+
+/***************COMMENTS****************/
+
+/***************FOOTER****************/
+
+#footer{
+	clear: both;
+	margin-left: 20px;
+	font-size: 11px;
+	text-align: center;
+}
+
+/***************ADD ONS****************/
+
