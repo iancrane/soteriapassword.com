@@ -23,7 +23,7 @@ body{
 	}
 
 body.splash_bg {
-	background: url(/wp-content/themes/soteria/images/BGTile.jpg); 	
+	background: url(images/BGTile.jpg); 	
 	}
 
 img{
@@ -97,7 +97,7 @@ h3 {
 #topTitle{
 	margin:auto;
 	text-align:center;
-	background: url(/wp-content/themes/soteria/images/HeaderBG.jpg) repeat-x;
+	background: url(images/HeaderBG.jpg) repeat-x;
 	border-bottom: 1px solid #ccc;
 	box-shadow: 0px 0px 6px #444;
 	height: 50px;
@@ -108,7 +108,7 @@ h3 {
 	font-family: 'PT Sans Narrow', sans-serif;
 	padding-top: 10px;
 	text-shadow: 0px 1px #000;
-	background: url(/wp-content/themes/soteria/images/Soteria-Icon-SM.png) no-repeat left;
+	background: url(images/Soteria-Icon-SM.png) no-repeat left;
 	padding-left: 40px;
 	text-align: left;
 	margin-left: 10px;
@@ -124,7 +124,7 @@ a.like {
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	background-image: url(/wp-content/themes/soteria/images/soteria-likeus.png);
+	background-image: url(images/soteria-likeus.png);
 	background-position: top center;
 	display: block;
 	height: 32px;
@@ -195,7 +195,7 @@ a.like:hover {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	background: url(/wp-content/themes/soteria/images/BG.jpg) no-repeat top center;
+	background: url(images/BG.jpg) no-repeat top center;
 	z-index: -10;
 	}
 
@@ -310,12 +310,12 @@ a.like:hover {
 	height: 85px !important;
 	width: 84px !important;
 	margin-left: -50px !important;
-	background: transparent url(/wp-content/themes/soteria/images/go-button.png) no-repeat top center !important;
+	background: transparent url(images/go-button.png) no-repeat top center !important;
 	margin-top: -150px !important;
 	}
 
 #mc-embedded-subscribe:hover {
-	background: transparent url(/wp-content/themes/soteria/images/go-button.png) no-repeat bottom center !important;
+	background: transparent url(images/go-button.png) no-repeat bottom center !important;
 	float: right;
 	}
 
@@ -349,7 +349,7 @@ a.download-link{
 	font-size: 1px;
 	margin: 10px auto;
 	text-indent: -5000px;
-	background: url('/wp-content/themes/soteria/images/download.png') 0 0 no-repeat;
+	background: url('images/download.png') 0 0 no-repeat;
 }
 a.download-link:hover{
 	background-position: 0 -74px;
@@ -361,7 +361,7 @@ a.download-link:hover{
 	float: left;
 	margin-left: -165px !important;
 	margin-top: -30px !important;
-	background: url(/wp-content/themes/soteria/images/Arrow.png) no-repeat bottom right;
+	background: url(images/Arrow.png) no-repeat bottom right;
 	padding-bottom: 110px !important;
 	padding-right: 50px !important;
 	text-align: center;
