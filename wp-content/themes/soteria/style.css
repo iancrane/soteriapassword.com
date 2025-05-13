@@ -299,8 +299,7 @@ div.testimonials_solution_widget strong span{
 	width: 200px;
 	float: right;
 }
-#mc_embed_signup h3{text-align:center}
-.some_fields input{
+#mc_embed_signup.some_fields input{
 	width: 93%;
 	margin: 5px;
 	padding: 8px 3px;
