@@ -7,7 +7,7 @@ Version: 1.0
 */
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption, {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}
 caption {text-align:left;font-weight:normal;}
 blockquote:before,blockquote:after,q:before,q:after {content: "";}
 blockquote, q {quotes: "" "";}
