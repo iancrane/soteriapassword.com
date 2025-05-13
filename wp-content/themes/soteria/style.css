@@ -135,13 +135,11 @@ h3 {
 #header ul.some li a.li{background-position: -60px 0px;}
 #header ul.some li a.yt{background-position: -93px 0px;}
 #header ul.some li a.gp{background-position: -127px 0px;}
-#header ul.some li a.rss{background-position: -157px 0px;}
 #header ul.some li a.fb:hover{background-position: 0px -31px;}
 #header ul.some li a.tw:hover{background-position: -27px -31px;}
 #header ul.some li a.li:hover{background-position: -60px -31px;}
 #header ul.some li a.yt:hover{background-position: -93px -31px;}
 #header ul.some li a.gp:hover{background-position: -127px -31px;}
-#header ul.some li a.rss:hover{background-position: -157px -31px;}
 
 #topTitle{
 	height: 450px;
