@@ -89,25 +89,26 @@ input[type="submit"]{border:none;padding:14px 0 34px;float:right;font-size:18px}
 .aligncenter {
 	display: block;
 	margin: auto;
-	}
+}
 .clear {
 	clear: both;
 }
 
 h1 {
 	font-size: 2em;
-	}
+}
 
 h2 {
 	font-size: 1.8em;
 	font-family: 'PT Sans Narrow', sans-serif;
 	margin-bottom: 5px;
-	}
+}
 
 h3 {
 	font-size: 1.4em;
 	font-family: 'PT Sans Narrow', sans-serif;
-	}
+	font-weight: bold;
+}
 
 /***************HEADER & NAV****************/
 
