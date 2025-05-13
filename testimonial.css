@@ -10,14 +10,14 @@ clear: both;
 	background: #f4f4f4;
 			}
 .testimonial .avatar {
-			background:#FFFFFF none repeat scroll 0 0;
-			order:1px solid #dddddd;
-			float:right;
-			margin-right:-5px;
-			margin-top:-5px;
-			padding:2px;
-			position:relative;
-			}
+	background:#FFFFFF none repeat scroll 0 0;
+	order:1px solid #dddddd;
+	float:right;
+	margin-right:-5px;
+	margin-top:-5px;
+	padding:2px;
+	position:relative;
+	}
 div.pagination {
 	font-size:11px;
 	font-family:Tahoma,Arial,Helvetica,Sans-serif;

@@ -276,16 +276,16 @@ div.testimonials_solution_widget strong span{
 	padding: 35px 15px 20px;
 }
 #content.home div.topcontent div.open-quote{
-	width: 84px;
-	height: 70px;
-	margin: -30px 0 0 -20px;
+	width: 76px;
+	height: 57px;
+	margin: -28px 0 0 -14px;
 	position: absolute;
 	background: url('images/open-quote.png') center center no-repeat;
 }
 #content.home div.topcontent div.close-quote{
-	width: 84px;
-	height: 70px;
-	margin: -35px 0 0 230px;
+	width: 76px;
+	height: 57px;
+	margin: -30px 0 0 235px;
 	background: url('images/close-quote.png') center center no-repeat;
 }
 #mc_embed_signup {
@@ -368,10 +368,19 @@ div.testimonials_solution_widget strong span{
 
 #footer{
 	clear: both;
+	font-size: 12px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*		ORIGINAL #footer css definition
+#footer{
+	clear: both;
 	margin-left: 20px;
 	font-size: 11px;
 	text-align: center;
 }
+*/
 
 /***************ADD ONS****************/
 
