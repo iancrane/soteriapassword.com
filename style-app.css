@@ -15,10 +15,6 @@ body{
 	font-family: verdana, arial, sans-serif;
 	}
 
-body.splash_bg {
-	background: url(images/BGTile.jpg); 	
-	}
-
 img{
 	border-style:none;
 }
