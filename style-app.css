@@ -1,18 +1,11 @@
-/* 
-Theme Name: Soteria Password
-Theme URL: http://elliottdesign.us/
-Description: Soteria Website 1.0
-Author: Don Elliott
-Version: 1.0
-*/
+/* Styles for the Soteria desktop app help page content */
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption, {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;}
 caption {text-align:left;font-weight:normal;}
 blockquote:before,blockquote:after,q:before,q:after {content: "";}
 blockquote, q {quotes: "" "";}
 *{margin:0;padding:0;}
-/* css to zero out the browser end*/
 
 body{
 	height: 100%;
@@ -71,7 +64,7 @@ h2 {
 	padding: 0px 0px 10px 0px !important;
 	margin: 0px 0px 10px 0px !important;
 	border-bottom: 1px solid #eee;
-	}
+}
 
 h3 {
 	font-size: 1.4em;
@@ -211,11 +204,9 @@ a.like:hover {
 	}
 
 #usercontent{
-
-//	float:left;
+	float:left;
 	margin: 50px auto 0px;
 	background: #fff;
-//	box-shadow: 0px 0px 10px #333;
 	padding: 10px 15px;
 	}
 
