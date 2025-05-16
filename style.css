@@ -1,11 +1,3 @@
-/* 
-Theme Name: Soteria Password
-Theme URL: http://elliottdesign.us/
-Description: Soteria Website 1.0
-Author: Elliott Design/Taylor Vincelli
-Version: 1.0
-*/
-
 /* css to zero out the browser */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}
 caption {text-align:left;font-weight:normal;}
@@ -52,30 +44,36 @@ strong{font-weight:bold}
 	font-size: 32px;
 	text-align: center;
 	font-weight: bold;
+	cursor: pointer;
 	background: url('images/buttons-big.png') -10px -6px no-repeat;
 }
-.big-button:hover,
-.small-button:hover{
-	text-decoration:none;
+.big-button:hover{
+	text-decoration: none;
 	background-position: -310px -6px;
 }
-.small-button:hover, input[type="submit"]:hover{background-position: -167px -6px;}
-.big-button:active{background-position: -610px -6px;}
-.small-button:active, input[type="submit"]:active{background-position: -328px -6px;}
-.small-button,
-input[type="submit"]{
+.big-button:active{
+	background-position: -610px -6px;
+}
+
+.small-button{
 	display: inline-block;
-	font-size: 14px;
 	height: 16px;
 	width: 135px;
 	padding: 17px 0;
 	color: #fefefe;
+	font-size: 14px;
 	text-align: center;
 	font-weight: bold;
 	cursor: pointer;
 	background: url('images/buttons-little.png') -10px -6px no-repeat;
 }
-input[type="submit"]{border:none;padding:14px 0 34px;float:right;font-size:18px}
+.small-button:hover{
+	text-decoration: none;
+	background-position: -167px -6px;
+}
+.small-button:active{
+	background-position: -327px -6px;
+}
 
 .alignleft {
 	float: left;
@@ -371,15 +369,3 @@ div.testimonials_solution_widget strong span{
 	margin-top: 20px;
 	text-align: center;
 }
-
-/*		ORIGINAL #footer css definition
-#footer{
-	clear: both;
-	margin-left: 20px;
-	font-size: 11px;
-	text-align: center;
-}
-*/
-
-/***************ADD ONS****************/
-
