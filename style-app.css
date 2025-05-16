@@ -1,19 +1,38 @@
 /* Styles for the Soteria desktop app help page content */
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;}
-caption {text-align:left;font-weight:normal;}
-blockquote:before,blockquote:after,q:before,q:after {content: "";}
-blockquote, q {quotes: "" "";}
-*{margin:0;padding:0;}
+html, body, div, span, applet, object, iframe, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption{
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+caption{
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+	content: "";
+}
+blockquote, q{
+	quotes: "" "";
+}
+*{
+	margin:0;
+	padding:0;
+}
 
+/* Standard html elements */
 body{
 	height: 100%;
 	font-size:14px;
 	padding:0;
 	margin:0;
 	font-family: verdana, arial, sans-serif;
-	}
+}
 
 img{
 	border-style:none;
@@ -31,57 +50,58 @@ p{
 	padding-bottom: 5px;
 }
 
-.alignleft {
+.alignleft{
 	float: left;
 	margin-right: 10px;
-	}
+}
 
-.alignright {
+.alignright{
 	float: right;
 	margin-left: 10px;
-	}
+}
 
-.aligncenter {
+.aligncenter{
 	display: block;
 	margin: auto;
-	}
+}
 
-.clear {
+.clear{
 	clear: both;
-	}
+}
 
-h1 {
+h1{
 	font-size: 2em;
-	}
+}
 
-h2 {
+h2{
 	font-size: 1.8em;
 	font-family: 'PT Sans Narrow', sans-serif;
 	padding: 0px 0px 10px 0px !important;
 	margin: 0px 0px 10px 0px !important;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ccc;
 }
 
-h3 {
+h3{
 	font-size: 1.4em;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: normal;
-	}
+	margin: 10px 0px 0px 0px;
+}
 
-/***************HEADER & NAV****************/
+/* Custom styles */
 
 #header{
 	width:100%;
 	position: fixed;
 	top: 0px;
-	}
+}
 
-.tm {
+.tm{
 	float: left;
 	color: #444;
 	margin: -40px 0 0 265px;
 	font-family: 'PT Sans Narrow', sans-serif;
-	}
+}
 
 #topTitle{
 	margin:auto;
@@ -90,7 +110,7 @@ h3 {
 	border-bottom: 1px solid #ccc;
 	box-shadow: 0px 0px 6px #444;
 	height: 50px;
-	}
+}
 
 #topTitle h1{
 	color: #444;
@@ -103,13 +123,13 @@ h3 {
 	text-align: left;
 	margin-left: 10px;
 	height: 40px;
-	}
+}
 
 #topNav{
 	width:100%;
-	}
+}
 	
-a.like {
+a.like{
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -118,240 +138,42 @@ a.like {
 	display: block;
 	height: 32px;
 	width: 32px;
-	}
+}
 
-a.like:hover {
+a.like:hover{
 	background-position: bottom center;
 }
 
-/*************** NAV Level 1 ****************/
-
-.menu-main-menu-container {
-	margin:auto;
-	}
-
-.menu li {
-	list-style-type:none;
-	display: inline;
-	padding-right:20px;
-	}
-
-/*-----Sub Nav-----*/
-
-.menu li ul{
-	display:none;
-	position:absolute;
-	width:100px;
-	}
-	
-.menu li:hover ul, .menu li ul:hover{
-	display:block;
-	}
-	
-.menu li ul li{
-	width:100px;
-	}
-
-/*-----Sub Sub Nav-----*/
-
-.menu li:hover ul li ul{
-	display:none;
-	}
-
-.menu li ul li:hover ul, .menu li ul li ul:hover {
-	display:block;
-	}
-
-.menu li ul li ul{
-	margin-left:50px;
-	margin-top:-15px;
-	position:relative;
-	}
-
-/***************SIDEBAR****************/	
-
-#sidebar{
-	width:200px;
-	float:right;
-	}
-
-#sidebar ul{
-	list-style:none;
-	}
-
 /***************CONTENT****************/
-.splash {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: url(images/BG.jpg) no-repeat top center;
-	z-index: -10;
-	}
 
-#splashcontent {
-	padding-top: 70px;
-	text-align: center;
-	}
 
 #content{
 	margin:auto;
 	width: 100%;	
-	}
+}
 
 #usercontent{
 	float:left;
 	margin: 50px auto 0px;
 	background: #fff;
 	padding: 10px 15px;
-	}
+}
 
 #usercontent ul, #usercontent ol{
 	margin: 10px 0px 20px 30px;
-	}
+}
 
 #usercontent ul ul, #usercontent ol ol{
 	margin: 0px 0px 20px 30px;
-	}
+}
 
 
-#usercontent ul li {
+#usercontent ul li{
 	line-height: 180%;
-	}
-
-.sitemap{
-	display:inline;
-	list-style:none;
-	}
-
-.sitemap li{
-	display:inline;
-	list-style:none;
-	margin:auto;
-	}
-
-.sitemap li ul{
-	display:none;
-	position:absolute;
-	width:100px;
-	}
-	
-.sitemap li:hover ul, .sitemap li ul:hover{
-	display:block;
-	}
-
-.sitemap li ul li{
-	width:100px;
-	}
-
-.sitemap li:hover ul li ul{
-	display:none;
-	}
-
-.sitemap li ul li:hover ul, .sitemap li ul li ul:hover {
-	display:block;
-	}
-
-.sitemap li ul li ul{
-	margin-left:50px;
-	margin-top:-15px;
-	position:relative;
-	}
-
-/***************COMMENTS****************/
-
-/***************FOOTER****************/
-
-#footer-splash{
-	margin:auto;
-	position: fixed;
-	bottom: 10px;
-	left: 10px;
-	font-size: 11px;
-	}
+}
 
 #footer{
 	clear: both;
 	margin-left: 20px;
 	font-size: 11px;
-	}
-
-/***************ADD ONS****************/
-/******FORM*******/
-
-.first_name, .last_name {
-	width: 115px !important;
-	display: inline-block !important;
-	}
-
-.email_address {
-	width: 234px !important;
-	}
-
-#mc_embed_signup .mc-field-group {
-	padding-bottom: 0px !important;
-	min-height: 25px !important;
-	clear: none !important;
-	}
-
-#mc-embedded-subscribe {
-	height: 85px !important;
-	width: 84px !important;
-	margin-left: -50px !important;
-	background: transparent url(images/go-button.png) no-repeat top center !important;
-	margin-top: -150px !important;
-	}
-
-#mc-embedded-subscribe:hover {
-	background: transparent url(images/go-button.png) no-repeat bottom center !important;
-	float: right;
-	}
-
-#mc_embed_signup .button {
-	clear: none !important;
-	float: right;
-	}
-
-#mc_embed_signup {
-	width: 400px;
-	margin: auto;
-	}
-
-.asterisk {
-	margin-top: -20px;
-	}
-
-.some_fields input{
-	border-radius: 9px;
-	box-shadow: inset 0px 0px 5px #aaa;
-	}
-
-.some_fields {
-margin-left: 66px;
-	}
-	
-a.download-link{
-	width: 225px;
-	height: 70px;
-	display: block;
-	font-size: 1px;
-	margin: 10px auto;
-	text-indent: -5000px;
-	background: url('images/download.png') 0 0 no-repeat;
 }
-a.download-link:hover{
-	background-position: 0 -74px;
-}
-
-#splashcontent h2 {
-	color: #fff;
-	font-family: 'Architects Daughter', sans-serif;
-	float: left;
-	margin-left: -165px !important;
-	margin-top: -30px !important;
-	background: url(images/Arrow.png) no-repeat bottom right;
-	padding-bottom: 110px !important;
-	padding-right: 50px !important;
-	text-align: center;
-	font-weight: normal !important;
-	border-bottom: none !important;
-	}

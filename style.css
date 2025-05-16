@@ -1,19 +1,38 @@
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}
-caption {text-align:left;font-weight:normal;}
-blockquote:before,blockquote:after,q:before,q:after {content: "";}
-blockquote, q {quotes: "" "";}
-*{margin:0;padding:0;}
-/* css to zero out the browser end*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption{
+	font-size:100%;
+	font-weight:inherit;
+	font-style:inherit;
+	font-family:inherit;
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+caption{
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+	content: "";
+}
+blockquote, q{
+	quotes: "" "";
+}
+*{
+	margin:0;padding:0;
+}
 
+/* Standard html elements */
 body{
 	height: 100%;
 	font-size: 16px;
+	font-weight: 300;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	padding: 0;
 	margin: 0;
 	color: #333;
-	font-weight: 300;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	background: url('images/bg.jpg');
 }
 
@@ -35,73 +54,33 @@ p{
 	
 strong{font-weight:bold}
 
-.big-button{
-	display: inline-block;
-	height: 20px;
-	width: 253px;
-	padding: 34px 0;
-	color: #fefefe;
-	font-size: 32px;
-	text-align: center;
-	font-weight: bold;
-	cursor: pointer;
-	background: url('images/buttons-big.png') -10px -6px no-repeat;
-}
-.big-button:hover{
-	text-decoration: none;
-	background-position: -310px -6px;
-}
-.big-button:active{
-	background-position: -610px -6px;
-}
-
-.small-button{
-	display: inline-block;
-	height: 16px;
-	width: 135px;
-	padding: 17px 0;
-	color: #fefefe;
-	font-size: 14px;
-	text-align: center;
-	font-weight: bold;
-	cursor: pointer;
-	background: url('images/buttons-little.png') -10px -6px no-repeat;
-}
-.small-button:hover{
-	text-decoration: none;
-	background-position: -167px -6px;
-}
-.small-button:active{
-	background-position: -327px -6px;
-}
-
-.alignleft {
+.alignleft{
 	float: left;
 	margin-right: 10px;
 }
-.alignright {
+.alignright{
 	float: right;
 	margin-left: 10px;
 }
-.aligncenter {
+.aligncenter{
 	display: block;
 	margin: auto;
 }
-.clear {
+.clear{
 	clear: both;
 }
 
-h1 {
+h1{
 	font-size: 2em;
 }
 
-h2 {
+h2{
 	font-size: 1.8em;
 	font-family: 'PT Sans Narrow', sans-serif;
 	margin-bottom: 5px;
 }
 
-h3 {
+h3{
 	font-size: 1.4em;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: bold;
@@ -156,64 +135,49 @@ h3 {
 	text-indent: 5000px;
 	background: url(images/logo.png) no-repeat top left;
 }
-#topNav{width:100%;}
 
-/*************** NAV Level 1 ****************/
-.menu-main-menu-container {
-	margin:auto;
+/* Button classes, big & small */
+.big-button{
+	display: inline-block;
+	height: 20px;
+	width: 253px;
+	padding: 34px 0;
+	color: #fefefe;
+	font-size: 32px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: url('images/buttons-big.png') -10px -6px no-repeat;
 }
-.menu li {
-	list-style-type:none;
-	display: inline;
-	padding-right:20px;
+.big-button:hover{
+	text-decoration: none;
+	background-position: -310px -6px;
 }
-/*-----Sub Nav-----*/
-.menu li ul{
-	display:none;
-	position:absolute;
-	width:100px;
-}
-.menu li:hover ul, .menu li ul:hover{
-	display:block;
-}
-.menu li ul li{
-	width:100px;
-}
-/*-----Sub Sub Nav-----*/
-.menu li:hover ul li ul{
-	display:none;
-}
-.menu li ul li:hover ul, .menu li ul li ul:hover {
-	display:block;
-}
-.menu li ul li ul{
-	margin-left:50px;
-	margin-top:-15px;
-	position:relative;
+.big-button:active{
+	background-position: -610px -6px;
 }
 
-/***************SIDEBAR****************/	
-
-#sidebar{
-	width:200px;
-	float:right;
+.small-button{
+	display: inline-block;
+	height: 16px;
+	width: 135px;
+	padding: 17px 0;
+	color: #fefefe;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: url('images/buttons-little.png') -10px -6px no-repeat;
+}
+.small-button:hover{
+	text-decoration: none;
+	background-position: -167px -6px;
+}
+.small-button:active{
+	background-position: -327px -6px;
 }
 
-#sidebar ul{
-	list-style:none;
-}
-
-/***************CONTENT****************/
-
-input[type="text"], textarea{
-width: 93%;
-margin: 5px;
-padding: 8px 3px !important;
-font-size: 16px;
-border-width: 1px;
-border-radius: 5px;
-box-shadow: inset 1px 1px 3px #777;
-}
+/* Content styles */
 
 #content{
 	width: 100%;
@@ -266,7 +230,7 @@ div.testimonials_solution_widget strong span{
 	font-size: 12px;
 	display: block;
 }
-#content.home div.topcontent .testimonials_solution_widget {
+#content.home div.topcontent .testimonials_solution_widget{
 	border:1px solid #777;
 	border-radius: 4px;
 	line-height: 140%;
@@ -284,19 +248,6 @@ div.testimonials_solution_widget strong span{
 	height: 57px;
 	margin: -30px 0 0 235px;
 	background: url('images/close-quote.png') center center no-repeat;
-}
-#mc_embed_signup {
-	width: 200px;
-	float: right;
-}
-#mc_embed_signup.some_fields input{
-	width: 93%;
-	margin: 5px;
-	padding: 8px 3px;
-	font-size: 16px;
-	border-width: 1px;
-	border-radius: 5px;
-	box-shadow: inset 1px 1px 3px #777;
 }
 
 #content.home #usercontent{
@@ -352,16 +303,6 @@ div.testimonials_solution_widget strong span{
 #content ul, #content ol{
 	margin: 10px 0 10px 20px;
 }
-
-
-.sitemap{
-	display:inline;
-	list-style:none;
-}
-
-/***************COMMENTS****************/
-
-/***************FOOTER****************/
 
 #footer{
 	clear: both;
