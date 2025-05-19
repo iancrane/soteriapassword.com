@@ -48,7 +48,7 @@ a:hover{
 }
 
 p{
-	padding-bottom: 1em;
+	padding: 1em;
 	line-height: 150%;
 }
 	
@@ -89,10 +89,9 @@ h3{
 /***************HEADER & NAV****************/
 
 #header{
-	width: 1050px;
+	width: 1020px;
 	min-height: 430px;
-	margin: 0 auto;
-	padding-top: 10px;
+	margin: 10px auto 0px;
 	background: url('images/screenshots.png') bottom right no-repeat;
 }
 #header ul.some{margin-left:50px;}
@@ -142,6 +141,7 @@ h3{
 	height: 20px;
 	width: 253px;
 	padding: 34px 0;
+	margin: 0px 15px;
 	color: #fefefe;
 	font-size: 32px;
 	text-align: center;
@@ -181,14 +181,14 @@ h3{
 
 #content{
 	width: 100%;
-	margin: 0 auto 10px;
+	margin: 0 auto 0;
 	box-shadow: 0 0 5px #000;
 	border-top: 2px solid #555;
 	border-bottom: 1px solid #777;
 	background: url('images/greybg.jpg');
 }
 #content .content-container{
-	width: 740px;
+	width: 860px;
 	margin: auto;
 	padding: 50px 160px;
 	background:url('images/glow-line.png') center top repeat-y;
@@ -201,11 +201,10 @@ h3{
 }
 #content.home div.topcontent{
 	background:url('images/glow-line.png') center top repeat-y;
-	padding: 20px 0;
 }
 #content.home div.topcontent .content{
-	width: 960px;
-	margin: 0 auto;
+	width:900px;
+	margin: auto;
 }
 #content.home div.topcontent .content ul{
 	line-height: 210%;
@@ -214,8 +213,8 @@ h3{
 div.widget{
 	width: 350px;
 	float: left;
+	margin: 0px 50px 20px;
 }
-div.testimonials_solution_widget{margin-right:50px;}
 div.testimonials_solution_widget strong{
 	display: block;
 	font-size: 14px;
@@ -230,7 +229,7 @@ div.testimonials_solution_widget strong span{
 	border:1px solid #777;
 	border-radius: 4px;
 	line-height: 140%;
-	padding: 35px 15px 20px;
+	padding: 35px 30px 20px;
 }
 #content.home div.topcontent div.open-quote{
 	width: 76px;
@@ -267,7 +266,10 @@ div.testimonials_solution_widget strong span{
 	width: 900px;
 	margin: 0 auto;
 }
-#content.home p.buttons{text-align:center;}
+#content.home p.buttons{
+	text-align:center;
+	padding: 30px;
+}
 #content.home div.bottomcontent{
 	background:url('images/glow-line.png') center top repeat-y;
 }
