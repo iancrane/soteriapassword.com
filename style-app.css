@@ -3,141 +3,139 @@
 /* Styles for the Soteria desktop app help page content */
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption{
-	font-size:100%;
-	font-family:inherit;
-	vertical-align:baseline;
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
 }
-caption{
-	text-align:left;
-	font-weight:normal;
+caption {
+    text-align: left;
+    font-weight: normal;
 }
-blockquote:before,blockquote:after,q:before,q:after{
-	content: "";
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
 }
-blockquote, q{
-	quotes: "" "";
+blockquote, q {
+    quotes: "" "";
 }
-*{
-	margin:0;
-	padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Standard html elements */
-body{
-	height: 100%;
-	font-size:14px;
-	padding:0;
-	margin:0;
-	font-family: verdana, arial, sans-serif;
+body {
+    height: 100%;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-family: verdana, arial, sans-serif;
 }
 
-img{
-	border-style:none;
+img {
+    border-style: none;
 }
 
-a{
-	text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-a:hover{
-	text-decoration: underline;
+a:hover {
+    text-decoration: underline;
 }
 
-p{
-	padding-bottom: 5px;
+p {
+    padding-bottom: 5px;
 }
 
-h1{
-	font-size: 2em;
+h1 {
+    font-size: 2em;
 }
 
-h2{
-	font-size: 1.8em;
-	font-family: 'PT Sans Narrow', sans-serif;
-	padding: 0px 0px 10px 0px !important;
-	margin: 0px 0px 10px 0px !important;
-	border-bottom: 1px solid #ccc;
+h2 {
+    font-size: 1.8em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 0px 0px 10px 0px !important;
+    margin: 0px 0px 10px 0px !important;
+    border-bottom: 1px solid #ccc;
 }
 
-h3{
-	font-size: 1.4em;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: normal;
-	margin: 10px 0px 0px 0px;
+h3 {
+    font-size: 1.4em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: normal;
+    margin: 10px 0px 0px 0px;
 }
 
 /* Custom styles */
 
-#header{
-	width:100%;
-	position: fixed;
-	top: 0px;
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
 }
 
-.tm{
-	float: left;
-	color: #444;
-	margin: -42px 0 0 264px;
-	font-family: 'PT Sans Narrow', sans-serif;
+.tm {
+    float: left;
+    color: #444;
+    margin: -42px 0 0 264px;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
-#topTitle{
-	margin:auto;
-	text-align:center;
-	background: url(images/HeaderBG.jpg) repeat-x;
-	border-bottom: 1px solid #ccc;
-	box-shadow: 0px 0px 6px #444;
-	height: 50px;
+#topTitle {
+    margin: auto;
+    text-align: center;
+    background: url(images/HeaderBG.jpg) repeat-x;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 0px 6px #444;
+    height: 50px;
 }
 
-#topTitle h1{
-	color: #444;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: normal;
-	padding-top: 10px;
-	text-shadow: 0px 1px #000;
-	background: url(images/Padlock-30x45.png) no-repeat left;
-	padding-left: 35px;
-	text-align: left;
-	margin-left: 10px;
-	height: 40px;
+#topTitle h1 {
+    color: #444;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: normal;
+    padding-top: 10px;
+    text-shadow: 0px 1px #000;
+    background: url(images/Padlock-30x45.png) no-repeat left;
+    padding-left: 35px;
+    text-align: left;
+    margin-left: 10px;
+    height: 40px;
 }
 
 /***************CONTENT****************/
 
-
-#content{
-	margin:auto;
-	width: 100%;	
+#content {
+    margin: auto;
+    width: 100%;	
 }
 
-#usercontent{
-	float:left;
-	margin: 50px auto 0px;
-	background: #fff;
-	padding: 10px 15px;
+#usercontent {
+    float: left;
+    margin: 50px auto 0px;
+    background: #fff;
+    padding: 10px 15px;
 }
 
-#usercontent ul, #usercontent ol{
-	margin: 10px 0px 20px 30px;
+#usercontent ul, #usercontent ol {
+    margin: 10px 0px 20px 30px;
 }
 
-#usercontent ul ul, #usercontent ol ol{
-	margin: 0px 0px 20px 30px;
+#usercontent ul ul, #usercontent ol ol {
+    margin: 0px 0px 20px 30px;
 }
 
-
-#usercontent ul li{
-	line-height: 180%;
+#usercontent ul li {
+    line-height: 180%;
 }
 
-#footer{
-	clear: both;
-	margin-left: 20px;
-	font-size: 11px;
+#footer {
+    clear: both;
+    margin-left: 20px;
+    font-size: 11px;
 }
