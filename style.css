@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* css to zero out the browser */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,fieldset, form, label, legend, caption{
 	font-size:100%;
@@ -214,6 +216,12 @@ div.widget{
 	width: 350px;
 	float: left;
 	margin: 0px 50px 20px;
+}
+.testimonials_solution_widget{
+    margin: 10px 0;
+    padding:10px;
+    border: 1px dotted #dddddd;
+    background: #f4f4f4;
 }
 div.testimonials_solution_widget strong{
 	display: block;

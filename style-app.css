@@ -50,25 +50,6 @@ p{
 	padding-bottom: 5px;
 }
 
-.alignleft{
-	float: left;
-	margin-right: 10px;
-}
-
-.alignright{
-	float: right;
-	margin-left: 10px;
-}
-
-.aligncenter{
-	display: block;
-	margin: auto;
-}
-
-.clear{
-	clear: both;
-}
-
 h1{
 	font-size: 2em;
 }
@@ -123,25 +104,6 @@ h3{
 	text-align: left;
 	margin-left: 10px;
 	height: 40px;
-}
-
-#topNav{
-	width:100%;
-}
-	
-a.like{
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	background-image: url(images/soteria-likeus.png);
-	background-position: top center;
-	display: block;
-	height: 32px;
-	width: 32px;
-}
-
-a.like:hover{
-	background-position: bottom center;
 }
 
 /***************CONTENT****************/
