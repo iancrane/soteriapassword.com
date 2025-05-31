@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
     font-size: 100%;
     font-weight: inherit;
     font-style: inherit;
@@ -21,10 +21,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 blockquote, q {
     quotes: "" "";
-}
-* {
-    margin: 0;
-    padding: 0;
 }
 
 /* Standard html elements */
@@ -52,7 +48,7 @@ a:hover {
 
 p {
     padding: 1em;
-    line-height: 150%;
+    line-height: 200%;
 }
     
 strong {
@@ -75,27 +71,30 @@ strong {
     clear: both;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 2em;
+    margin: 20px 0 5px 0;
 }
 
 h2 {
     font-size: 1.8em;
     font-family: 'PT Sans Narrow', sans-serif;
-    margin-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.4em;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-weight: bold;
+    font-size: 1.6em;
+    margin: 10px 0 5px 0;
 }
 
 /***************HEADER & NAV****************/
-
 #header {
-    width: 1020px;
-    min-height: 430px;
+    width: 960px;
+    min-height: 510px;
     margin: 10px auto 0px;
     background: url('images/screenshots.png') bottom right no-repeat;
 }
@@ -103,6 +102,7 @@ h3 {
     margin-left: 50px;
 }
 #header ul.some li {
+    display: block;
     list-style: none;
     float: left;
     margin: 2px;
@@ -126,37 +126,37 @@ h3 {
 #header ul.some li a.yt:hover{background-position: -93px -31px;}
 
 #topTitle {
-    height: 450px;
-    background: url(images/caption.png) no-repeat 70px 250px;
+    background: url(images/caption.png) top right no-repeat;
 }
-#topTitle h1 {
-    height: 135px;
-    width: 280px;
-    font-size: 1px;
-    font-size: 0px;
-    text-indent: 5000px;
-}
-#topTitle h1 a {
+#topTitle a.logo {
     display: block;
     height: 135px;
     width: 280px;
-    font-size: 1px;
-    font-size: 0px;
-    text-indent: 5000px;
-    background: url(images/logo.png) no-repeat top left;
+    background: url(images/logo.png) 0px 0px no-repeat;
+}
+
+#container {
+    margin: 0px auto;
+    background: url('images/greybg.jpg');
 }
 
 /* Button classes, big & small */
+#top-buttons {
+    margin: 100px 0px 20px 10px;
+    vertical-align: middle;
+}
+
 .big-button {
-    display: inline-block;
+    display: block;
     height: 20px;
     width: 253px;
-    padding: 34px 0;
-    margin: 0px 15px;
+    padding: 28px 0 40px;
+    margin: 29px 0px;
     color: #fefefe;
     font-size: 32px;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
+    line-height: 100%;
     cursor: pointer;
     background: url('images/buttons-big.png') -10px -6px no-repeat;
 }
@@ -175,8 +175,9 @@ h3 {
     padding: 17px 0;
     color: #fefefe;
     font-size: 14px;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
+    line-height: 100%;
     cursor: pointer;
     background: url('images/buttons-little.png') -10px -6px no-repeat;
 }
@@ -191,18 +192,18 @@ h3 {
 /* Content styles */
 
 #content {
-    width: 100%;
-    margin: 0 auto 0;
     box-shadow: 0 0 5px #000;
     border-top: 2px solid #555;
     border-bottom: 1px solid #777;
-    background: url('images/greybg.jpg');
+    width: 100%;
+    margin: 0 auto 0;
 }
 #content .content-container {
-    width: 860px;
-    margin: auto;
-    padding: 50px 160px;
-    background: url('images/glow-line.png') center top repeat-y;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+#content .content-container p {
+    padding: 0px;
 }
 
 #usercontent {
@@ -214,7 +215,7 @@ h3 {
     background: url('images/glow-line.png') center top repeat-y;
 }
 #content.home div.topcontent .content {
-    width: 900px;
+    width: 1000px;
     margin: auto;
 }
 #content.home div.topcontent .content ul {
@@ -224,7 +225,10 @@ h3 {
 div.widget {
     width: 350px;
     float: left;
-    margin: 0px 50px 20px;
+    margin: 46px 70px 20px;
+}
+.widget-title {
+    margin-top: 0px;
 }
 .testimonials_solution_widget {
     margin: 10px 0;
@@ -236,6 +240,7 @@ div.testimonials_solution_widget strong {
     display: block;
     font-size: 14px;
     text-align: right;
+    margin-top: 14px;
 }
 div.testimonials_solution_widget strong span {
     font-weight: normal;
@@ -251,14 +256,14 @@ div.testimonials_solution_widget strong span {
 #content.home div.topcontent div.open-quote {
     width: 76px;
     height: 57px;
-    margin: -28px 0 0 -14px;
+    margin: -27px 0 0 -9px;
     position: absolute;
     background: url('images/open-quote.png') center center no-repeat;
 }
 #content.home div.topcontent div.close-quote {
     width: 76px;
     height: 57px;
-    margin: -30px 0 0 235px;
+    margin: -30px 0 0 283px;
     background: url('images/close-quote.png') center center no-repeat;
 }
 
@@ -274,9 +279,7 @@ div.testimonials_solution_widget strong span {
 }
 #content.home #usercontent div.content p {
     font-size: 24px;
-    line-height: 160%;
     text-align: center;
-    padding-bottom: 0;
     font-family: 'Lato', sans-serif;
 }
 #content.home #usercontent div.content {
@@ -299,13 +302,7 @@ div.testimonials_solution_widget strong span {
 #content.home div.bottomcontent div.content-block div.content {
     padding: 20px 10px;
 }
-#content.home div.bottomcontent div.content-block p {
-    line-height: 170%;
-}
-#content.home div.bottomcontent div.content-block h3 {
-    color: #111;
-    font-size: 1.6em;
-}
+
 #content.home div.bottomcontent div.content-block.left div.media {
     float: left;
     margin-right: 35px;
@@ -329,5 +326,11 @@ div.testimonials_solution_widget strong span {
     clear: both;
     font-size: 12px;
     margin-top: 20px;
+    height: 100%;
     text-align: center;
+}
+#footer img.ssl-certificate {
+    display: block;
+    margin: auto;
+    padding: 16px 0px;
 }
