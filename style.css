@@ -198,12 +198,24 @@ h3 {
     width: 100%;
     margin: 0 auto 0;
 }
-#content .content-container {
-    padding: 20px 40px;
+#content .content-message {
+    padding: 20px;
     margin: auto;
+    width: fit-content;
 }
-#content .content-container p {
+#content .content-showcase {
+    padding: 20px;
+    margin: auto;
+    width: 740px;
+}
+#content .content-message p, .content-showcase p {
     padding: 0px;
+}
+.demo-video {
+    border: 4px solid #FEFEFE;
+    box-shadow: 0 0 7px #333;
+    width: 730px;
+    height: 600px;
 }
 
 #usercontent {
