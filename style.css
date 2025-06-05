@@ -98,32 +98,32 @@ h3 {
     margin: 10px auto 0px;
     background: url('images/screenshots.png') bottom right no-repeat;
 }
-#header ul.some {
+#header ul.socials {
     margin-left: 50px;
 }
-#header ul.some li {
+#header ul.socials li {
     display: block;
     list-style: none;
     float: left;
     margin: 2px;
 }
-#header ul.some li a {
+#header ul.socials li a {
     display: block;
     width: 30px;
     height: 30px;
     font-size: 1px;
     font-size: 0px;
     text-indent: -5000px;
-    background: url('images/some.png') no-repeat;
+    background: url('images/socials.png') no-repeat;
 }
-#header ul.some li a.fb{background-position: 0px 0px;}
-#header ul.some li a.tw{background-position: -27px 0px;}
-#header ul.some li a.li{background-position: -60px 0px;}
-#header ul.some li a.yt{background-position: -93px 0px;}
-#header ul.some li a.fb:hover{background-position: 0px -31px;}
-#header ul.some li a.tw:hover{background-position: -27px -31px;}
-#header ul.some li a.li:hover{background-position: -60px -31px;}
-#header ul.some li a.yt:hover{background-position: -93px -31px;}
+#header ul.socials li a.fb{background-position: 0px 0px;}
+#header ul.socials li a.tw{background-position: -27px 0px;}
+#header ul.socials li a.li{background-position: -60px 0px;}
+#header ul.socials li a.yt{background-position: -93px 0px;}
+#header ul.socials li a.fb:hover{background-position: 0px -31px;}
+#header ul.socials li a.tw:hover{background-position: -27px -31px;}
+#header ul.socials li a.li:hover{background-position: -60px -31px;}
+#header ul.socials li a.yt:hover{background-position: -93px -31px;}
 
 #topTitle {
     background: url(images/caption.png) top right no-repeat;
