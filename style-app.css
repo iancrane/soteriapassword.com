@@ -5,7 +5,7 @@
 /* css to zero out the browser */
 html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 	font-size: 100%;
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Arial', sans-serif;
 	vertical-align: baseline;
 	border: 0;
 	outline: 0;
@@ -49,45 +49,29 @@ p {
 	padding-bottom: 5px;
 }
 
-/* Title text with trademark style */
-h1 {
-	font-size: 2em;
-	display: inline-block;
-}
-sup {
-	font-size: 0.6em;
-	font-weight: lighter;
-	vertical-align: super;
-}
-
 h2 {
 	font-size: 1.8em;
 	padding: 15px 0px 10px !important;
 }
-
 h3 {
 	font-size: 1.4em;
 	font-weight: normal;
 	margin: 15px 0px 0px 0px;
 }
 
-
 ul, ol {
 	margin-top: 5px;
 	margin-left: 30px;
 }
-
 li {
 	line-height: 120%;
 	margin-bottom: 5px;
 }
-
 ol ol {
 	counter-reset: list;
 	list-style: none;
 	margin-left: 14px;
 }
-
 ol ol li::before {
 	content: counter(list, lower-alpha) ") ";
 	counter-increment: list;
@@ -100,21 +84,34 @@ ol ol li::before {
 	height: 52px;
 	width: 100%;
 	background: url(images/HeaderBG.jpg) repeat-x;
-	box-shadow: 0px 0px 6px #444;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #777;
+    /* The 3 border-* lines above should be deleted and replaced with the box-shadow line below
+       once the browser is updated from IE7 to something more modern.
+	box-shadow: 0px 0px 6px #444; */
 }
 
 #topTitle {
-
-	background: no-repeat url(images/Padlock-30x45.png);
-	background-position: left 10px top 50%;
+    vertical-align: middle;
 	text-align: left;
 	color: #333;
-	text-wrap-mode: nowrap;
-	vertical-align: middle;
-	padding: 10px 10px 10px 50px;
+    margin: 5px;
 }
 
-/***************CONTENT****************/
+#topTitle img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#topTitle span {
+	font-size: 2em;
+    vertical-align: middle;
+}
+#topTitle sup {
+    font-size: 0.5em;
+	vertical-align: text-top;
+}
 
 #content {
 	margin: auto;
