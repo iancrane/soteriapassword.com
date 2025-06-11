@@ -38,6 +38,7 @@ body {
 
 img {
 	border-style: none;
+    vertical-align: text-bottom;
 }
 
 a {
@@ -50,7 +51,7 @@ a:hover {
 
 p {
     line-height: 120%;
-	padding-bottom: 5px;
+	padding-bottom: 8px;
 }
 
 h2 {
@@ -73,8 +74,9 @@ ul, ol {
 	margin-left: 30px;
 }
 li {
-	line-height: 120%;
-	margin-bottom: 5px;
+	line-height: 16px; /* To match icons */
+    vertical-align: bottom;
+    margin-bottom: 5px;
 }
 ol ol {
 	counter-reset: list;
