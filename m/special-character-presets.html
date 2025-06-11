@@ -17,7 +17,7 @@
         <div id="content" class="app">
             <div id="usercontent">
                 <h2>Special Character Presets</h2>
-                <p>Some web sites have known limitations, and you can select the preset to help generate an acceptable password that is still as strong as possible.  Many banks and financial institutions are surprisingly limited, so you can try the<strong> Bank of America</strong> preset or, as a last resort, <strong>None</strong>.</p>
+                <p>Some websites have known limitations, and you can select the preset to help generate an acceptable password that is still as strong as possible.  Many banks and financial institutions are surprisingly limited, so you can try the<strong> Bank of America</strong> preset or, as a last resort, <strong>None</strong>.</p>
                 <p>You can also type your own special characters into the <strong>Use these</strong> text box, which will switch the <strong>Presets</strong> list to &#8220;Custom&#8221;.  A new password is automatically generated every time you change special characters.</p>
                 <h3>Additional Information</h3>
                 <ul>
@@ -28,7 +28,14 @@
                 </ul>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <p id="source-url"></p>
+        </div>
 	</div>
+    <script>
+        var sourceUrl = document.URL;
+        var displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 42);
+        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "'>" + displayUrl + "</a>";
+    </script>
 </body>
 </html>

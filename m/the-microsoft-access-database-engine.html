@@ -29,7 +29,14 @@
                 <p>Click <a title="Downloading Installers" href="downloading-installers.html">here </a>for download instructions.</p>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <p id="source-url"></p>
+        </div>
 	</div>
+    <script>
+        var sourceUrl = document.URL;
+        var displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 42);
+        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "'>" + displayUrl + "</a>";
+    </script>
 </body>
 </html>

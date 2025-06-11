@@ -27,7 +27,10 @@ blockquote, q {
 
 /* Standard html elements */
 body {
+    background-color: ivory;
 	height: 100%;
+    width: 375px;
+    max-width: 640px;
 	font-size: 14px;
 	padding: 0;
 	margin: 0;
@@ -83,13 +86,11 @@ ol ol li::before {
 	counter-increment: list;
 }
 
-/* Custom styles */
-
 #header {
 	position: fixed;
 	height: 52px;
 	width: 100%;
-	background: url(images/HeaderBG.jpg) repeat-x;
+	background-color: rgb(209, 255, 210);
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #777;
@@ -127,12 +128,30 @@ ol ol li::before {
 #usercontent {
 	float: left;
 	margin: 50px auto 0px;
-	background: #fff;
+	background: transparent;
 	padding-left: 15px;
 }
 
 #footer {
 	clear: both;
-	margin-left: 20px;
-	font-size: 11px;
+    position: fixed;
+    bottom: 0px;
+	height: 16px;
+	width: 100%;
+	background: url(images/HeaderBG.jpg) repeat-x;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777;
+    margin-top: auto;
+}
+#source-url {
+    color: #333;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative; /* For IE7 */
+    width: 362px; /* For IE7 */
+    white-space: nowrap;
+    padding-bottom: 0px;
+    padding-left: 10px;
 }
