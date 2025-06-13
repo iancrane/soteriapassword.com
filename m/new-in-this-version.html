@@ -32,8 +32,13 @@
 	</div>
     <script>
         var sourceUrl = document.URL;
-        var displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 42);
-        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "'>" + displayUrl + "</a>";
+        var displayUrl;
+        if (sourceUrl.length < 72) {
+            displayUrl = sourceUrl.substring(7);
+        } else {
+            displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 40);
+        }
+        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "' title='" + sourceUrl + "'>" + displayUrl + "</a>";
     </script>
 </body>
 </html>
