@@ -56,17 +56,17 @@ p {
 
 h2 {
 	font-size: 1.8em;
-	margin: 24px 0px 10px;
+	margin: 14px 0px 8px;
 }
 h3 {
 	font-size: 1.4em;
 	font-weight: normal;
-	margin: 15px 0px 0px 0px;
+	margin: 8px 0px 0px 0px;
 }
 h4 {
 	font-size: 1em;
 	font-weight: bold;
-	margin: 6px 0px 2px 0px;
+	margin: 4px 0px 2px 0px;
 }
 
 ul, ol {
@@ -133,7 +133,7 @@ ol ol li::before {
 
 #usercontent {
 	float: left;
-	margin: 50px auto 0px;
+	margin: 60px auto 0px;
 	background: transparent;
 	padding-left: 15px;
 }
