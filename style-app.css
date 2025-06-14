@@ -51,27 +51,26 @@ a:hover {
 
 p {
     line-height: 120%;
-	padding-bottom: 8px;
+	padding: 5px 0px;
 }
 
 h2 {
 	font-size: 1.8em;
-	margin: 14px 0px 8px;
+	margin: 14px 0px 0px;
 }
 h3 {
 	font-size: 1.4em;
 	font-weight: normal;
-	margin: 8px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
 }
 h4 {
 	font-size: 1em;
 	font-weight: bold;
-	margin: 4px 0px 2px 0px;
+	margin: 8px 0px 0px 0px;
 }
 
 ul, ol {
-	margin-top: 5px;
-	margin-left: 30px;
+	padding: 5px 0px 5px 30px;
 }
 li {
 	line-height: 16px; /* To match icons */
@@ -158,6 +157,9 @@ ol ol li::before {
     position: relative; /* For IE7 */
     width: 362px; /* For IE7 */
     white-space: nowrap;
-    padding-bottom: 0px;
-    padding-left: 5px;
+    padding: 0px 0px 0px 5px;
+}
+
+.screen-shot {
+    margin: 6px auto 4px;
 }
