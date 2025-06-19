@@ -3,7 +3,7 @@
 /* Styles for the Soteria desktop app help page content */
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+html, body, div, span, applet, object, iframe, p, pre, abbr, del, dfn, em, font, img, ins, kbd, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 	font-size: 100%;
 	font-family: 'Arial', sans-serif;
 	vertical-align: baseline;
@@ -13,12 +13,6 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, del,
 caption {
 	text-align: left;
 	font-weight: normal;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-}
-blockquote, q {
-	quotes: "" "";
 }
 * {
 	margin: 0;
