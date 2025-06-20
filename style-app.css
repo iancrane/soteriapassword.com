@@ -86,9 +86,6 @@ ol ol li::before {
     border-width: 0 0 1px 0;
     border-color: #777;
     vertical-align: middle;
-    /* The 3 border-* lines above should be deleted and replaced with the box-shadow line below
-       once the browser is updated from IE7 to something more modern.
-	box-shadow: 0px 0px 6px #444; */
 }
 
 #topTitle {
@@ -99,12 +96,10 @@ ol ol li::before {
     padding: 8px;
     height: 100%;
 }
-
 #topTitle img {
     display: inline-block;
     vertical-align: middle;
 }
-
 #topTitle span.title {
 	font-size: 2em;
     vertical-align: middle;
@@ -119,11 +114,9 @@ ol ol li::before {
 	width: 100vw;
     font-size: calc(3.5vw);
 }
-
 #content {
    clear: both;
 }
-
 #usercontent {
 	float: left;
 	margin: 60px auto 0px;
@@ -151,7 +144,6 @@ ol ol li::before {
     white-space: nowrap;
     padding: 3px 6px;
 }
-
 #source-url a {
     color: #333;
 }
