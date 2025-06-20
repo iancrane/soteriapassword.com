@@ -56,16 +56,17 @@ h4 {
 }
 
 p {
-    line-height: 120%;
-	padding: 5px 0px;
+    line-height: 140%;
+	padding: 2px 0px 6px;
 }
 
 ul, ol {
 	padding: 5px 0px 5px 20px;
 }
 li {
-    vertical-align: bottom;
+    line-height: 140%;
     margin-bottom: 4px;
+    vertical-align: bottom;
 }
 ol ol {
 	counter-reset: list;
