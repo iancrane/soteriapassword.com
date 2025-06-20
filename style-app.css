@@ -3,15 +3,14 @@
 /* Styles for the Soteria desktop app help page content */
 
 /* css to zero out the browser */
-html, body, div, span, applet, object, iframe, p, pre, abbr, del, dfn, em, font, img, ins, kbd, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
-	font-family: 'Arial', sans-serif;
-	vertical-align: baseline;
-	border: 0;
-	outline: 0;
-}
 * {
 	margin: 0;
 	padding: 0;
+}
+html, body, div, span, applet, object, iframe, p, pre, abbr, del, dfn, em, font, img, ins, kbd, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	font-family: 'Arial', sans-serif;
+	border: 0;
+	outline: 0;
 }
 
 a {
