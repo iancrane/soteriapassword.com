@@ -127,7 +127,7 @@ ol ol li::before {
 	float: left;
 	margin: 60px auto 0px;
 	background: transparent;
-    padding: 0px 30px 30px 15px;
+    padding: 0px 15px 30px 15px;
 }
 
 #footer {
