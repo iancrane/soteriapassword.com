@@ -40,8 +40,8 @@ img {
 }
 
 h1, h2, h3, h4 {
-    color: #444;
-    font-weight: normal;
+    color: black;
+    font-weight: bold;
 }
 h2 {
 	font-size: 1.5em;
@@ -96,7 +96,7 @@ ol ol li::before {
 #topTitle {
     vertical-align: middle;
 	text-align: left;
-	color: #444;
+	color: black;
     margin: auto 5px;
     padding: 8px;
     height: 100%;
@@ -107,6 +107,7 @@ ol ol li::before {
 }
 #topTitle span.title {
 	font-size: 2em;
+    font-weight: bold;
     vertical-align: middle;
     padding-left: 8px;
 }
