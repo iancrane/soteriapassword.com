@@ -11,9 +11,9 @@
 		<div id="header">
 			<div id="topTitle">
                 <a class="image-link" title="Help Index" href="index.html">
-                    <img title="Padlock Icon" src="../images/padlock-30x45.png" height="45" width="30">
+                    <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="imgHoverHandler(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="imgHoverHandler(this, '../images/padlock-30x45.png')">
                 </a>
-				<span class="title">Soteria Password<sup>&trade;</sup></span>
+                <span class="title">Soteria Password<sup>&trade;</sup></span>
 			</div>
 		</div>
         <div id="content">
@@ -46,6 +46,9 @@
             displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 37);
         }
         document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "' title='" + sourceUrl + "'>" + displayUrl + "</a>";
+        
+        function imgHoverHandler(imgElement, newSrc) { imgElement.src = newSrc; }
+
     </script>
 </body>
 </html>
