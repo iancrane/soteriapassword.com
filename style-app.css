@@ -64,9 +64,8 @@ ul, ol {
 	padding: 5px 0px 5px 20px;
 }
 li {
-    line-height: 140%;
     margin-bottom: 4px;
-    vertical-align: bottom;
+    vertical-align: middle; /* Prevents IE7 from bottom-justifying the bullets relative to text */
 }
 ol ol {
 	counter-reset: list;
