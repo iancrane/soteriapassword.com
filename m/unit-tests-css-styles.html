@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<title>Faster Website Logins | Soteria Password | Fast, Easy & Secure Password Management</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="stylesheet" href="../style-app.css" type="text/css" media="screen">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="topTitle">
+                <a class="image-link" title="Help Index" href="index.html">
+                    <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="imgHoverHandler(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="imgHoverHandler(this, '../images/padlock-30x45.png')">
+                </a>
+                <span class="title">Soteria Password<sup>&trade;</sup></span>
+			</div>
+		</div>
+        <div id="content">
+            <div id="usercontent">
+                <h2>CSS Style Unit Tests</h2>
+                <h3>Info Tip Box</h3>
+                <p>My preference would be for the text blocks to be centered vertically, but that's not straightforward for IE7. Fortunately there are currently no examples of tips having only 1 or 2 lines of text.</p>
+                <div class="info-tip-box">
+                    <p class="info-tip-text">This is an info tip with only one line of text.</p>
+                </div>
+                <div class="info-tip-box">
+                    <p class="info-tip-text">This is an example with enough content to word-wrap and produce two lines.</p>
+                </div>
+                <div class="info-tip-box">
+                    <p class="info-tip-text">This is a word-wrapping example with more text than will fit on just two lines. One must include more text for this to happen.</p>
+                </div>
+                <div class="info-tip-box">
+                    <p class="info-tip-text">This is a word-wrapping example with lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots and lots of text.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="source-url"></p>
+        </div>
+	</div>
+    <script>
+        var sourceUrl = document.URL;
+        var displayUrl;
+        if (sourceUrl.length < 64) {
+            displayUrl = sourceUrl;
+        } else if (sourceUrl.length < 72) {
+            displayUrl = sourceUrl.substring(7);
+        } else {
+            displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 37);
+        }
+        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "' title='" + sourceUrl + "'>" + displayUrl + "</a>";
+        
+        function imgHoverHandler(imgElement, newSrc) { imgElement.src = newSrc; }
+
+    </script>
+</body>
+</html>
