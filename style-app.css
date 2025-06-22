@@ -158,15 +158,15 @@ ol ol li::before {
     padding: 0px 15px 0px 60px;
     margin-top: 6px;
     background-color: white;
-    border-top: #ccc solid 1px;
-    border-left: #ccc solid 1px;
-    border-bottom: #999 solid 1px;
-    border-right: #999 solid 1px;
+    border-top: #ccc dotted 1px;
+    border-left: #ccc dotted 1px;
+    border-bottom: #666 dotted 1px;
+    border-right: #666 dotted 1px;
     border-radius: 8px;
     min-height: 46px;
 }
 p.info-tip-text {
-    font-size: 80%;
+    font-size: 90%;
     font-style: italic;
     line-height: 120%;
     color: #333;
