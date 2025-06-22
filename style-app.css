@@ -56,7 +56,7 @@ h4 {
 }
 
 p {
-    line-height: 140%;
+    line-height: 120%;
 	padding: 2px 0px 6px;
 }
 
@@ -151,6 +151,27 @@ ol ol li::before {
 }
 #source-url a {
     color: #333;
+}
+
+.info-tip-box {
+    background: url(images/info-bubble-32x32.png) no-repeat 15px center;
+    padding: 0px 15px 0px 60px;
+    margin-top: 6px;
+    background-color: white;
+    border-top: #ccc solid 1px;
+    border-left: #ccc solid 1px;
+    border-bottom: #999 solid 1px;
+    border-right: #999 solid 1px;
+    border-radius: 8px;
+    min-height: 46px;
+}
+p.info-tip-text {
+    font-size: 80%;
+    font-style: italic;
+    line-height: 120%;
+    color: #333;
+    padding: 4px 0px;
+    margin: auto 0px;
 }
 
 .screen-shot {
