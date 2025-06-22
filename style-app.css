@@ -126,7 +126,7 @@ ol ol li::before {
 	clear: both;
     position: fixed;
     bottom: 0px;
-	height: 20px;
+	height: 22px;
 	width: 100%;
 	background: url(images/HeaderBG.jpg) repeat-x;
     border-style: solid;
@@ -136,14 +136,18 @@ ol ol li::before {
 #source-url {
     font-size: 12px;
     font-family: 'Arial', sans-serif;
-    overflow: hidden;
-    position: relative; /* For IE7 */
-    width: 362px; /* For IE7 */
+    width: 352px; /* For IE7 */
+    height: 28px;
     white-space: nowrap;
-    padding: 3px 6px;
+    vertical-align: middle;
+    display: inline-block;
 }
 #source-url a {
     color: #333;
+    text-decoration: none;
+}
+#source-icon {
+    padding: 3px;
 }
 
 .info-tip-box {
