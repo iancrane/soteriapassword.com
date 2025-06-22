@@ -151,14 +151,14 @@ ol ol li::before {
 }
 
 .info-tip-box {
-    background: url(images/info-bubble-32x32.png) no-repeat 12px center;
-    padding: 8px 8px 8px 58px;
+    background: url(images/lightbulb-tilted-30x32.png) no-repeat 12px center;
+    padding: 8px 8px 8px 54px;
     margin-top: 6px;
     background-color: white;
-    border-top: #ccc dotted 1px;
-    border-left: #ccc dotted 1px;
-    border-bottom: #666 dotted 1px;
-    border-right: #666 dotted 1px;
+    border-top: #ccc solid 1px;
+    border-left: #ccc solid 1px;
+    border-bottom: #666 solid 1px;
+    border-right: #666 solid 1px;
     border-radius: 8px;
     min-height: 45px;
 }
