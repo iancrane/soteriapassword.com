@@ -11,7 +11,7 @@
 		<div id="header">
 			<div id="topTitle">
                 <a class="image-link" title="Help Index" href="index.html">
-                    <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="imgHoverHandler(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="imgHoverHandler(this, '../images/padlock-30x45.png')">
+                    <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="imgSrcSwapper(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="imgSrcSwapper(this, '../images/padlock-30x45.png')">
                 </a>
                 <span class="title">Soteria Password<sup>&trade;</sup></span>
 			</div>
@@ -39,13 +39,6 @@
                     <li><a title="Faster Website Logins" href="faster-logins.html">Faster Website Logins</a></li>
                     <li><a title="Go Super Fast" href="super-fast.html">Go Super Fast</a></li>
                 </ul>
-                <h3>Password complexity</h3>
-                <ul>
-                    <li><a title="Password Generator" href="password-generator.html">Password Generator</a></li>
-                    <li><a title="Password Strength" href="password-strength.html">Password Strength</a></li>
-                    <li><a title="Roll Your Own" href="roll-your-own.html">Roll Your Own</a></li>
-                    <li><a title="Special Character Presets" href="special-character-presets.html">Special Character Presets</a></li>
-                </ul>                
                 <h3>Setup and Installation</h3>
                 <ul>
                     <li><a title="64-Bit Soteria Password" href="64-bit-soteria-password.html">64-Bit Soteria Password</a></li>
@@ -54,6 +47,13 @@
                     <li><a title="The Microsoft Access Database Engine" href="the-microsoft-access-database-engine.html">The Microsoft Access Database Engine</a></li>
                     <li><a title="Windows Updates" href="windows-updates.html">Windows Updates</a></li>
                 </ul>
+                <h3>Password complexity</h3>
+                <ul>
+                    <li><a title="Password Generator" href="password-generator.html">Password Generator</a></li>
+                    <li><a title="Password Strength" href="password-strength.html">Password Strength</a></li>
+                    <li><a title="Roll Your Own" href="roll-your-own.html">Roll Your Own</a></li>
+                    <li><a title="Special Character Presets" href="special-character-presets.html">Special Character Presets</a></li>
+                </ul>                
                 <h3>Online Resources</h3>
                 <ul>
                     <li><a target="_blank" title="Facebook Page" href="https://www.facebook.com/soteriapassword">Facebook Page</a></li>
@@ -64,7 +64,8 @@
             </div>
         </div>
         <div id="footer">
-            <p id="source-url"></p>
+            <img id="source-icon" height="16" width="16">            
+            <a id="source-url"></a>
         </div>
 	</div>
     <script>
@@ -77,9 +78,19 @@
         } else {
             displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 37);
         }
-        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "' title='" + sourceUrl + "'>" + displayUrl + "</a>";
+        var link = document.getElementById("source-url");
+        link.href = sourceUrl;
+        link.title = sourceUrl;
+        link.textContent = displayUrl;
+
+        if (sourceUrl.indexOf("file:") === 0) {
+            var icon = document.getElementById("source-icon");
+            icon.src = "../images/floppy-disk-16x16.png";
+            icon.alt = "Local File";
+            icon.title = "Local File";
+        }
         
-        function imgHoverHandler(imgElement, newSrc) { imgElement.src = newSrc; }
+        function imgSrcSwapper(imgElement, newSrc) { imgElement.src = newSrc; }
 
     </script>
 </body>
