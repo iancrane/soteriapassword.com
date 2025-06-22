@@ -23,7 +23,6 @@ a.image-link:hover {
 	text-decoration: none;
 }
 
-/* Standard html elements */
 body {
     background-color: ivory;
 	height: 100%;
@@ -77,11 +76,6 @@ ol ol li::before {
 	counter-increment: list;
 }
 
-/* Some alternate colors for the header background 
- Soft light blue    rgb(208, 240, 240);
- Creamy Green       rgb(209, 255, 210);
- Soft Bright Green  rgb(219, 255, 220);
- */
 #header {
 	position: fixed;
 	width: 100%;
@@ -91,7 +85,6 @@ ol ol li::before {
     border-color: #777;
     vertical-align: middle;
 }
-
 #topTitle {
     vertical-align: middle;
 	text-align: left;
@@ -155,7 +148,7 @@ ol ol li::before {
 
 .info-tip-box {
     background: url(images/info-bubble-32x32.png) no-repeat 15px center;
-    padding: 0px 15px 0px 60px;
+    padding: 8px 15px 8px 60px;
     margin-top: 6px;
     background-color: white;
     border-top: #ccc dotted 1px;
@@ -163,15 +156,14 @@ ol ol li::before {
     border-bottom: #666 dotted 1px;
     border-right: #666 dotted 1px;
     border-radius: 8px;
-    min-height: 46px;
+    min-height: 45px;
 }
 p.info-tip-text {
     font-size: 90%;
     font-style: italic;
     line-height: 120%;
+    padding: 0px;
     color: #333;
-    padding: 4px 0px;
-    margin: auto 0px;
 }
 
 .screen-shot {
