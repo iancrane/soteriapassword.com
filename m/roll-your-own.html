@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
 <head>
-	<title>Roll Your Own | Soteria Password | Fast, Easy & Secure Password Management</title>
+	<title>Roll Your Own | Soteria Password - Help</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="max-image-preview:large">
 	<link rel="stylesheet" href="../style-app.css" type="text/css" media="screen">
@@ -14,6 +14,7 @@
                     <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="setImgSrc(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="setImgSrc(this, '../images/padlock-30x45.png')">
                 </a>
                 <span class="title">Soteria Password<sup>&trade;</sup></span>
+                <a id="unit-tests-link" href="unit-tests.html" title="Unit Tests"></a>
 			</div>
 		</div>
         <div id="content">
@@ -41,25 +42,28 @@
 
         function initPageSource() {
             var sourceUrl = document.URL;
-            setSourceIcon(sourceUrl);
             setSourceUrl(sourceUrl);
+
+            var isLocal = sourceUrl.indexOf("file:") === 0;
+            setSourceIcon(isLocal);
+            setUnitTests(isLocal);
         }
 
-        function setSourceIcon(url) {
+        function setSourceIcon(isLocal) {
             var icon = document.getElementById("source-icon");
-            if (url.indexOf("file:") === 0) {
-                icon.title = "Local File";
-                icon.src = "../images/floppy-disk-16x16.png";
-            } else {
-                icon.title = "Website";
-                icon.src = "../images/www-16x16.png";
-            }
+            icon.title = isLocal ? "Local File" : "Website";
+            icon.src = isLocal ? "../images/floppy-disk-16x16.png" : "../images/www-16x16.png";
         }
 
         function setSourceUrl(url) {
             var displayUrl = getDisplayUrl(url);
             var link = document.getElementById("source-url");
             link.innerHTML = '<a href="' + url + '" title="Right-click to Copy the full URL via the popup menu">' + displayUrl + '</a>';
+        }
+
+        function setUnitTests(isLocal) {
+            var link = document.getElementById("unit-tests-link");
+            link.innerHTML = isLocal ? '<img src="../images/beaker-16x16.png" title="Unit Tests">' : '';
         }
 
         function getDisplayUrl(url) {
