@@ -227,9 +227,7 @@ div.testimonial strong span {
 	padding: 10px 15px;
 	margin: 50px auto 0px;
 }
-#content.home div.topcontent {
-	background: url('images/glow-line.png') center top repeat-y;
-}
+
 #content.home div.topcontent .content {
 	width: 1000px;
 	margin: auto;
