@@ -7,7 +7,7 @@
 	margin: 0;
 	padding: 0;
 }
-html, body, div, span, applet, object, iframe, p, pre, abbr, del, dfn, em, font, img, ins, kbd, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+html, body, div, span, applet, object, iframe, p, pre, abbr, del, dfn, em, font, img, ins, s, samp, acronym, address, big, cite, code, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	font-family: 'Arial', sans-serif;
 	border: 0;
 	outline: 0;
@@ -28,13 +28,6 @@ body {
 	height: 100%;
     width: 375px;
     max-width: 640px;
-	font-size: 14px;
-	padding: 0;
-	margin: 0;
-}
-
-img {
-	border-style: none;
 }
 
 h1, h2, h3, h4 {
@@ -54,6 +47,28 @@ h4 {
 	margin: 8px 0px 0px 0px;
 }
 
+img {
+	border-style: none;
+    vertical-align: middle;
+}
+
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+  color: #333;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 100%;
+  padding: 2px 4px;
+  white-space: nowrap;
+  margin: auto 0px;
+}
+
 p {
     line-height: 120%;
 	padding: 3px 0px 5px;
@@ -63,7 +78,7 @@ ul, ol {
 	padding: 5px 0px 5px 20px;
 }
 li {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     vertical-align: middle; /* Prevents IE7 from bottom-justifying the bullets relative to text */
 }
 ol ol {
@@ -76,6 +91,37 @@ ol ol li::before {
 	counter-increment: list;
 }
 
+table {
+    border: 1px solid #777;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #777;
+    padding: 4px 8px;
+    text-align: left;
+}
+th {
+    background-color: rgb(180, 225, 255);
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+td {
+    vertical-align: middle;
+}
+td.key-combo {
+    text-align: center;
+    width: 68px;
+}
+tr {
+    background-color: white;
+}
+tr.even {
+    background-color: rgb(238, 248, 255);
+}
+
 #header {
 	position: fixed;
 	width: 100%;
@@ -86,20 +132,17 @@ ol ol li::before {
     vertical-align: middle;
 }
 #topTitle {
-    vertical-align: middle;
-	text-align: left;
-	color: black;
     margin: auto 5px;
     padding: 8px;
-    height: 100%;
 }
 #topTitle img {
     display: inline-block;
     vertical-align: middle;
 }
 #topTitle span.title {
-	font-size: 2em;
+	font-size: 1.8em;
     font-weight: bold;
+    display: inline-block;
     vertical-align: middle;
     padding-left: 8px;
 }
@@ -137,10 +180,7 @@ ol ol li::before {
     font-size: 12px;
     font-family: 'Arial', sans-serif;
     width: 352px; /* For IE7 */
-    height: 28px;
     white-space: nowrap;
-    vertical-align: middle;
-    display: inline-block;
 }
 #source-url a {
     color: #333;
@@ -148,10 +188,22 @@ ol ol li::before {
 }
 #source-icon {
     padding: 3px;
+    vertical-align: top;
 }
 
 #unit-tests-link {
-    padding-left: 28px;
+    display: inline-block;
+    position: absolute;
+    right: 14px;
+    margin: auto 0px;
+}
+
+.key-combo {
+    white-space: nowrap;
+}
+
+.key-combo-col {
+    width: 68px;
 }
 
 .info-tip-box {
