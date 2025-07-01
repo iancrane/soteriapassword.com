@@ -26,7 +26,7 @@ a.image-link:hover {
 body {
     background-color: ivory;
 	height: 100%;
-    width: 375px;
+    width: 100%;
     max-width: 640px;
 }
 
@@ -70,7 +70,7 @@ kbd {
 }
 
 p {
-    line-height: 120%;
+    line-height: 140%;
 	padding: 3px 0px 5px;
 }
 
@@ -122,8 +122,16 @@ tr.even {
     background-color: rgb(238, 248, 255);
 }
 
+#container {
+	width: 100%;
+    font-size: calc(4vw);
+}
+
 #header {
-	position: fixed;
+    clear: both;
+    float: left;
+    position: fixed;
+    top: 0px;
 	width: 100%;
 	background-color: rgb(219, 255, 220);
     border-style: solid;
@@ -151,44 +159,44 @@ tr.even {
 	vertical-align: text-top;
 }
 
-#container {
-	width: 100vw;
-    font-size: calc(3.5vw);
-}
 #content {
-   clear: both;
+    margin-top: 60px;
 }
 #usercontent {
 	float: left;
-	margin: 60px auto 0px;
 	background: transparent;
-    padding: 0px 15px 30px 15px;
+    padding: 0px 15px;
 }
 
 #footer {
 	clear: both;
     position: fixed;
+    font-size: 12px;
     bottom: 0px;
-	height: 22px;
 	width: 100%;
+    height: 21px;
 	background: url(images/HeaderBG.jpg) repeat-x;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #777;
+    border: #777 solid 1px;
+    vertical-align: top;
+}
+#source-icon {
+    padding: 3px;
+    vertical-align: inherit;
 }
 #source-url {
-    font-size: 12px;
-    font-family: 'Arial', sans-serif;
-    width: 352px; /* For IE7 */
+    display: inline-block;
+    margin: auto 0px;
+    padding: 3px 0px;
+    vertical-align: middle;
     white-space: nowrap;
 }
 #source-url a {
     color: #333;
-    text-decoration: none;
+    vertical-align: inherit;
 }
-#source-icon {
-    padding: 3px;
-    vertical-align: top;
+#source-url a:hover {
+    color: blue;
+	text-decoration: none;
 }
 
 #unit-tests-link {
