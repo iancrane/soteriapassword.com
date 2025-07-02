@@ -10,11 +10,14 @@
 	<div id="container">
 		<div id="header">
 			<div id="topTitle">
-                <img src="../images/padlock-30x45.png">
-				<span class="title">Soteria Password<sup>&trade;</sup></span>
+                <a class="image-link" title="Help Index" href="index.html">
+                    <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="setImgSrc(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="setImgSrc(this, '../images/padlock-30x45.png')">
+                </a>
+                <span class="title">Soteria Password<sup>&trade;</sup></span>
+                <a id="unit-tests-link" href="unit-tests.html" title="Unit Tests"></a>
 			</div>
 		</div>
-        <div id="content" class="app">
+        <div id="content">
             <div id="usercontent">
                 <h2>New in This Version</h2>
                 <p><strong>Version 1.0.0.41</strong></p>
@@ -27,20 +30,50 @@
             </div>
         </div>
         <div id="footer">
-            <p id="source-url"></p>
+            <img id="source-icon" height="16" width="16">
+            <span id="source-url">Content Source</span>
         </div>
 	</div>
     <script>
-        var sourceUrl = document.URL;
-        var displayUrl;
-        if (sourceUrl.length < 64) {
-            displayUrl = sourceUrl;
-        } else if (sourceUrl.length < 72) {
-            displayUrl = sourceUrl.substring(7);
-        } else {
-            displayUrl = sourceUrl.substring(7, 24) + "..." + sourceUrl.substring(sourceUrl.length - 37);
+        initPageSource();
+
+        function initPageSource() {
+            var sourceUrl = document.URL;
+            setSourceUrl(sourceUrl);
+
+            var isLocal = sourceUrl.indexOf("file:") === 0;
+            setSourceIcon(isLocal);
+            setUnitTests(isLocal);
         }
-        document.getElementById("source-url").innerHTML = "<a href='" + sourceUrl + "' title='" + sourceUrl + "'>" + displayUrl + "</a>";
+
+        function setSourceIcon(isLocal) {
+            var icon = document.getElementById("source-icon");
+            icon.title = isLocal ? "Local File" : "Website";
+            icon.src = isLocal ? "../images/floppy-disk-16x16.png" : "../images/www-16x16.png";
+        }
+
+        function setSourceUrl(url) {
+            var displayUrl = getDisplayUrl(url);
+            var link = document.getElementById("source-url");
+            link.innerHTML = '<a href="' + url + '" title="Right-click to Copy the full URL via the popup menu">' + displayUrl + '</a>';
+        }
+
+        function setUnitTests(isLocal) {
+            var link = document.getElementById("unit-tests-link");
+            link.innerHTML = isLocal ? '<img src="../images/beaker-30x45.png" title="Unit Tests">' : '';
+        }
+
+        function getDisplayUrl(url) {
+            if (url.length < 62) {
+                return url;
+            } else if (url.length < 70) {
+                return url.substring(7);
+            } else {
+                return url.substring(7, 24) + "..." + url.substring(url.length - 41);
+            }
+        }
+
+        function setImgSrc(imgElement, newSrc) { imgElement.src = newSrc; }
     </script>
 </body>
 </html>
