@@ -169,7 +169,7 @@ tr.even {
 }
 
 #footer {
-	clear: both;
+	clear: both;    
     position: fixed;
     font-size: 12px;
     bottom: 0px;
@@ -184,6 +184,7 @@ tr.even {
     vertical-align: inherit;
 }
 #source-url {
+    font-family: 'Segoe UI', sans-serif;
     display: inline-block;
     margin: auto 0px;
     padding: 3px 0px;
@@ -191,7 +192,7 @@ tr.even {
     white-space: nowrap;
 }
 #source-url a {
-    color: #333;
+    color: #222;
     vertical-align: inherit;
 }
 #source-url a:hover {
