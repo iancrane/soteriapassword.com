@@ -179,7 +179,7 @@ tr.even {
     vertical-align: top;
 }
 #source-icon {
-    padding: 3px 3px 0px;
+    padding: 3px 0px 3px 3px;
     vertical-align: inherit;
 }
 #source-url {
