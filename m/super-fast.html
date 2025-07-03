@@ -70,7 +70,7 @@
         function setSourceUrl(url) {
             var displayUrl = getDisplayUrl(url);
             var link = document.getElementById("source-url");
-            link.innerHTML = '<a href="' + url + '" title="Right-click to Copy the full URL via the popup menu">' + displayUrl + '</a>';
+            link.innerHTML = '<a href="' + url + '" title="Right-click to Copy the full URL">' + displayUrl + '</a>';
         }
 
         function setUnitTests(isLocal) {
@@ -84,7 +84,7 @@
             } else if (url.length < 70) {
                 return url.substring(7);
             } else {
-                return url.substring(7, 24) + "..." + url.substring(url.length - 41);
+                return url.substring(7, 24) + "..." + url.substring(url.length - 40);
             }
         }
 
