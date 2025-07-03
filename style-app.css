@@ -171,24 +171,22 @@ tr.even {
 #footer {
 	clear: both;    
     position: fixed;
-    font-size: 12px;
     bottom: 0px;
 	width: 100%;
-    height: 21px;
+    height: 17px;
 	background: url(images/HeaderBG.jpg) repeat-x;
     border: #777 solid 1px;
     vertical-align: top;
 }
 #source-icon {
-    padding: 3px;
+    padding: 2px 3px 0px;
     vertical-align: inherit;
 }
 #source-url {
     font-family: 'Segoe UI', sans-serif;
-    display: inline-block;
-    margin: auto 0px;
-    padding: 3px 0px;
-    vertical-align: middle;
+    font-size: 12px;
+    margin-top: 2px;
+    vertical-align: inherit;
     white-space: nowrap;
 }
 #source-url a {
