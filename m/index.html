@@ -14,7 +14,7 @@
                     <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="setImgSrc(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="setImgSrc(this, '../images/padlock-30x45.png')">
                 </a>
                 <span class="title">Soteria Password<sup>&trade;</sup></span>
-                <a id="unit-tests-link" href="unit-tests.html" title="Unit Tests"></a>
+                <a id="unit-tests-link" title="Unit Tests" href="unit-tests.html"></a>
 			</div>
 		</div>
         <div id="content">
@@ -96,7 +96,9 @@
 
         function setUnitTests(isLocal) {
             var link = document.getElementById("unit-tests-link");
-            link.innerHTML = isLocal ? '<img src="../images/beaker-30x45.png" title="Unit Tests">' : '';
+            if (isLocal === false) return;
+
+            link.innerHTML = '<img title="Unit Tests" src="../images/beaker-30x45.png" height="45" width="30"  onmouseover="setImgSrc(this, \'../images/beaker-30x45-hover.png\')" onmouseout="setImgSrc(this, \'../images/beaker-30x45.png\')">';
         }
 
         function getDisplayUrl(url) {
