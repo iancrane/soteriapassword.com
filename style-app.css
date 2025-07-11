@@ -64,14 +64,14 @@ kbd {
   font-size: 0.8em;
   font-weight: bold;
   line-height: 100%;
-  padding: 2px 4px;
+  padding: 1px 3px;
   white-space: nowrap;
-  margin: auto 0px;
+  margin: auto 2px;
 }
 
 p {
     line-height: 140%;
-	padding: 3px 0px 5px;
+	padding: 3px 1px 5px 0px;
 }
 
 ul, ol {
@@ -226,8 +226,7 @@ tr.even {
 }
 p.info-tip-text {
     font-size: 90%;
-    font-style: italic;
-    line-height: 120%;
+    line-height: 130%;
     padding: 0px;
     color: #333;
 }
