@@ -24,14 +24,14 @@ a.image-link:hover {
 }
 
 body {
-    background-color: white;
+    background-color: #fff;
 	height: 100%;
     width: 100%;
     max-width: 640px;
 }
 
 h1, h2, h3, h4 {
-    color: black;
+    color: #000;
     font-weight: bold;
 }
 h2 {
@@ -116,7 +116,7 @@ td.key-combo {
     width: 68px;
 }
 tr {
-    background-color: white;
+    background-color: #fff;
 }
 tr.even {
     background-color: rgb(238, 248, 255);
@@ -193,7 +193,7 @@ tr.even {
     vertical-align: bottom;
 }
 #source-url a:hover {
-    color: blue;
+    color: #00f;
 	text-decoration: none;
 }
 
@@ -216,7 +216,7 @@ tr.even {
     background: url(images/lightbulb-tilted-30x32.png) no-repeat 12px center;
     padding: 8px 8px 8px 54px;
     margin: 14px 0px 16px;
-    background-color: white;
+    background-color: #ffffe0;
     border-top: #ccc solid 1px;
     border-left: #ccc solid 1px;
     border-bottom: #666 solid 1px;
