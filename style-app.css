@@ -205,6 +205,14 @@ tr.even {
     margin: auto 0px;
 }
 
+/* This makes local anchor links have the correct offset to compensate for the fixed header */
+.anchor {
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
 .key-combo {
     white-space: nowrap;
 }
