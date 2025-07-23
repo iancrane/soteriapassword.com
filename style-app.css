@@ -1,8 +1,7 @@
 @charset "utf-8";
 
-/* Styles for the Soteria desktop app help page content */
+/* Styles for the Soteria desktop app help pages and About box */
 
-/* css to zero out the browser */
 * {
 	margin: 0;
 	padding: 0;
@@ -17,21 +16,22 @@ a {
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    color: #00f;
 }
 a.image-link:hover {
 	text-decoration: none;
 }
 
 body {
-    background-color: #fff;
+    color: #333;
 	height: 100%;
     width: 100%;
+}
+body.app-help {
     max-width: 640px;
 }
 
 h1, h2, h3, h4 {
-    color: #000;
     font-weight: bold;
 }
 h2 {
@@ -59,7 +59,6 @@ kbd {
   border-left: 1px solid #bbb;
   border-bottom: 1px solid #666;
   border-right: 1px solid #666;
-  color: #333;
   display: inline-block;
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 0.8em;
@@ -95,10 +94,13 @@ ol ol li::before {
 table {
     border: 1px solid #777;
     border-collapse: collapse;
-    border-spacing: 0;
     margin: 15px 0px;
     width: 100%;
 }
+table.tight {
+    margin: 5px 0px 0px 0px;
+}
+
 td, th {
     border: 1px solid #777;
     padding: 4px 8px;
@@ -107,15 +109,17 @@ td, th {
 th {
     background-color: rgb(180, 225, 255);
     font-weight: bold;
-    vertical-align: text-bottom;
-}
-td {
-    vertical-align: middle;
 }
 td.key-combo {
     text-align: center;
     width: 68px;
 }
+td.label {
+    font-size:80%;
+    font-weight: bold;
+    width: 150px;
+}
+
 tr {
     background-color: #fff;
 }
@@ -129,16 +133,21 @@ tr.even {
 }
 
 #header {
+    background-color: rgb(180, 225, 255);
     clear: both;
     float: left;
     position: fixed;
     top: 0px;
 	width: 100%;
-    background-color: rgb(180, 225, 255);
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: #777;
     vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+#header-content {
+    border-bottom: #888 1px solid;
+}
+#header-content.about {
+    border-top: #888 1px solid;
+    padding: 0px 20px;
 }
 #topTitle {
     margin: auto 5px;
@@ -160,12 +169,19 @@ tr.even {
 	vertical-align: text-top;
 }
 
-#content {
-    margin-top: 60px; /* Chrome resizing: calc(50px + 3.8vw); */
+/* margin-top: calc(3.6vw); Scales the top offset to look better in a resizable container, like when debugging in Chrome */
+#content.about {
+    margin-top: 6px;
 }
-#usercontent {
+#content.help {
+    margin-top: 60px;
+}
+#content-about {
 	float: left;
-	background: transparent;
+    padding: 0px 30px;
+}
+#content-help {
+	float: left;
     padding: 0px 15px;
 }
 
@@ -190,14 +206,12 @@ tr.even {
     white-space: nowrap;
 }
 #source-url a {
-    color: #222;
+    color: #000;
     vertical-align: bottom;
 }
 #source-url a:hover {
     color: #00f;
-	text-decoration: none;
 }
-
 #unit-tests-link {
     display: inline-block;
     position: absolute;
@@ -235,7 +249,6 @@ tr.even {
 }
 p.info-tip-text {
     font-size: 90%;
-    color: #333;
 }
 
 .screen-shot {
