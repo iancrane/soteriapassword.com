@@ -178,7 +178,7 @@ tr.even {
 }
 #content-about {
 	float: left;
-    padding: 0px 30px;
+    padding: 0px 48px 0px 30px; /* Right margin is 18px wider to compensate for the WebBrowser control hiding the scrollbar via excess width */
 }
 #content-help {
 	float: left;
