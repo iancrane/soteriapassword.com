@@ -100,7 +100,9 @@ table {
 table.tight {
     margin: 5px 0px 0px 0px;
 }
-
+tr {
+    background-color: #fff;
+}
 td, th {
     border: 1px solid #777;
     padding: 4px 8px;
@@ -118,13 +120,6 @@ td.label {
     font-size:80%;
     font-weight: bold;
     width: 150px;
-}
-
-tr {
-    background-color: #fff;
-}
-tr.even {
-    background-color: rgb(238, 248, 255);
 }
 
 #container {
@@ -180,7 +175,7 @@ tr.even {
 	float: left;
     padding: 0px 30px;
 }
-#content-help {
+.content-help {
 	float: left;
     padding: 0px 15px;
 }
@@ -231,6 +226,10 @@ tr.even {
     font-size: 14px;
     font-style: italic;
     color: #888;
+}
+
+.even {
+    background-color: rgb(238, 248, 255);
 }
 
 .key-combo {
