@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<title>Version History | Soteria Password - Help</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="stylesheet" href="../style-app.css" type="text/css" media="screen">
+</head>
+<body class="app-help">
+	<div id="container">
+		<div id="header">
+            <div id="header-content">
+                <div id="topTitle">
+                    <a class="image-link" title="Help Index" href="index.html">
+                        <img title="Help Topics Index" src="../images/padlock-30x45.png" height="45" width="30"  onmouseover="setImgSrc(this, '../images/padlock-30x45-glow-blue.png')" onmouseout="setImgSrc(this, '../images/padlock-30x45.png')">
+                    </a>
+                    <span class="title">Soteria Password<sup>&trade;</sup></span>
+                    <a id="unit-tests-link" title="Unit Tests" href="unit-tests.html"></a>
+                </div>
+            </div>
+		</div>
+        <div id="content" class="help">
+            <div class="content-help">
+                <h2>Release History</h2>
+                <h3>Version 1.0.0.45 (July 25th, 2025)</h3>
+                <p class="code-name">"Revenge of the Boomers"</p>
+                <h4>User Interface Update</h4>
+                <ul>
+                    <li>Fonts have been enlarged on the main window to combat astigmatism and eye fatigue for us old folks.</li>
+                    <li>Now use the Consolas font for fields where confusion could arise between similar-looking characters, like <kbd>O</kbd> vs <kbd>0</kbd> and <kbd>l</kbd> vs <kbd>I</kbd>.</li>
+                </ul>
+                <h4>Help Pane Content</h4>
+                <ul>
+                    <li>Added a <a href="index.html">Help Topics Index</a>, which can be accessed by clicking the <img src="../images/padlock-16x16.png" height="16" width="16"> logo in the page header.</li>
+                    <li>Added a page that lists out all available keyboard shortcuts.</li>
+                    <li>Greatly improved performance and memory usage by eliminating all WordPress HTML elements and CSS overhead.</li>
+                    <li>Improved the overall appearance.</li>
+                    <li>Resolved an issue where runtime JavaScript errors could pop up unexpectedly.</li>
+                </ul>
+                <hr>
+                <h3>Version 1.0.0.41 (November 2nd, 2015)</h3>
+                <p class="code-name">"Last Official Update"</p>
+                <h4>Finding Faster Finds</h4>
+                <p><img decoding="async" src="../images/ss-find-effortless-347x58.png" alt="Find AutoSelect" width="347" height="58"></p>
+                <ul>
+                    <li>It's now even faster to switch to Soteria and find your entry. Suppose you've already opened a web page from one entry, and now you're returning to the Soteria main window to find a different entry. Soteria recognizes that the <strong>Find</strong> window was the last thing you used and automatically selects all of the text inside so you don't have to clear it -- just start typing, and the old contents are automatically replaced by what you type -- no <strong>Delete</strong> key required.</li>
+                    <li>Potentially resolved an issue that was causing errors to be written to the log when single-click Task bar icons are double-clicked.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <img id="source-icon" height="14" width="14">
+            <span id="source-url">Content Source</span>
+        </div>
+	</div>
+    <script>
+        initPageSource();
+
+        function initPageSource() {
+            var sourceUrl = document.URL;
+            setSourceUrl(sourceUrl);
+
+            var isLocal = sourceUrl.indexOf("file:") === 0;
+            setSourceIcon(isLocal);
+            setUnitTests(isLocal);
+        }
+
+        function setSourceIcon(isLocal) {
+            var icon = document.getElementById("source-icon");
+            icon.title = isLocal ? "Local File" : "Website";
+            icon.src = isLocal ? "../images/floppy-disk-14x14.png" : "../images/www-14x14.png";
+        }
+
+        function setSourceUrl(url) {
+            var displayUrl = getDisplayUrl(url);
+            var link = document.getElementById("source-url");
+            link.innerHTML = '<a href="' + url + '" title="Right-click to Copy the full URL">' + displayUrl + '</a>';
+        }
+
+        function setUnitTests(isLocal) {
+            var link = document.getElementById("unit-tests-link");
+            if (isLocal === false) return;
+
+            link.innerHTML = '<img title="Unit Tests" src="../images/beaker-30x45.png" height="45" width="30"  onmouseover="setImgSrc(this, \'../images/beaker-30x45-hover.png\')" onmouseout="setImgSrc(this, \'../images/beaker-30x45.png\')">';
+        }
+
+        function getDisplayUrl(url) {
+            if (url.length < 62) {
+                return url;
+            } else if (url.length < 70) {
+                return url.substring(7);
+            } else {
+                return url.substring(7, 24) + "..." + url.substring(url.length - 40);
+            }
+        }
+
+        function setImgSrc(imgElement, newSrc) { imgElement.src = newSrc; }
+    </script>
+</body>
+</html>
