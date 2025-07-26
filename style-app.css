@@ -227,6 +227,12 @@ tr.even {
   visibility: hidden;
 }
 
+.code-name {
+    font-size: 14px;
+    font-style: italic;
+    color: #888;
+}
+
 .key-combo {
     white-space: nowrap;
 }
