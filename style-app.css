@@ -27,9 +27,7 @@ body {
 	height: 100%;
     width: 100%;
 }
-body.app-help {
-    max-width: 640px;
-}
+
 
 h1, h2, h3, h4 {
     font-weight: bold;
