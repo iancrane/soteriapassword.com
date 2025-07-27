@@ -223,9 +223,10 @@ td.label {
 }
 
 .code-name {
-    font-size: 14px;
+    font-size: 13px;
     font-style: italic;
-    color: #888;
+    font-weight: bold;
+    color: #6600b9;
 }
 
 .even {
