@@ -70,7 +70,7 @@ kbd {
 }
 
 p {
-    line-height: 140%;
+    line-height: 120%;
 	padding: 3px 1px 5px 0px;
 }
 
@@ -78,6 +78,7 @@ ul, ol {
 	padding: 5px 0px 5px 20px;
 }
 li {
+    line-height: 120%;
     margin-bottom: 6px;
     vertical-align: middle; /* Prevents IE7 from bottom-justifying the bullets relative to text */
 }
@@ -164,7 +165,6 @@ td.label {
 	vertical-align: text-top;
 }
 
-/* margin-top: calc(3.6vw); Scales the top offset to look better in a resizable container, like when debugging in Chrome */
 #content.about {
     margin-top: 6px;
 }
