@@ -54,16 +54,17 @@ kbd {
   border-radius: 3px;
   border-top: 1px solid #bbb;
   border-left: 1px solid #bbb;
-  border-bottom: 1px solid #666;
-  border-right: 1px solid #666;
+  border-bottom: 1px solid #777;
+  border-right: 1px solid #888;
   display: inline-block;
   font-family: 'Consolas', 'Courier New', monospace;
-  font-size: 0.8em;
+  font-size: 80%;
   font-weight: bold;
-  line-height: 100%;
-  padding: 0px 3px 2px;
+  line-height: 90%;
+  padding: 0px 3px 3px 3px;
+  vertical-align: middle;
   white-space: nowrap;
-  margin: auto 2px;
+  margin: auto 1px;
 }
 
 p {
