@@ -76,7 +76,7 @@ ul, ol {
 	padding: 5px 0px 5px 20px;
 }
 li {
-    line-height: 120%;
+    line-height: 125%;
     margin-bottom: 6px;
     vertical-align: middle; /* Prevents IE7 from bottom-justifying the bullets relative to text */
 }
