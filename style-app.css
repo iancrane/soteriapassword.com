@@ -28,7 +28,6 @@ body {
     width: 100%;
 }
 
-
 h1, h2, h3, h4 {
     font-weight: bold;
 }
@@ -256,5 +255,5 @@ p.info-tip-text {
 
 .screen-shot {
     display: block;
-    margin: 6px 0px 4px;
+    margin: 10px 0px 4px;    
 }
