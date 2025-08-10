@@ -23,7 +23,7 @@ a.image-link:hover {
 }
 
 body {
-    color: #333;
+    color: #222;
 	height: 100%;
     width: 100%;
 }
@@ -32,16 +32,20 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 h1 {
-	font-size: 1.4em;
+	font-size: 1.6em;
 	margin: 14px 0px 2px;
 }
 h2 {
-	font-size: 1.1em;
+	font-size: 1.4em;
 	margin: 10px 0px 0px 0px;
 }
 h3 {
-	font-size: 1em;
+	font-size: 1.2em;
 	margin: 8px 0px 0px 0px;
+}
+
+html {
+    background-color: rgb(250, 250, 250);
 }
 
 img {
@@ -68,6 +72,7 @@ kbd {
 }
 
 p {
+    font-size: 120%;
     line-height: 135%;
 	padding: 3px 1px 5px 0px;
 }
@@ -76,6 +81,7 @@ ul, ol {
 	padding: 5px 0px 5px 20px;
 }
 li {
+    font-size: 110%;
     line-height: 125%;
     margin-bottom: 6px;
     vertical-align: middle; /* Prevents IE7 from bottom-justifying the bullets relative to text */
@@ -151,14 +157,14 @@ td.label {
     vertical-align: middle;
 }
 #topTitle span.title {
-	font-size: 1.8em;
+	font-size: 1.96em;
     font-weight: bold;
     display: inline-block;
-    vertical-align: middle;
     padding-left: 8px;
+    vertical-align: middle;
 }
 #topTitle sup {
-    font-size: 0.5em;
+    font-size: 0.6em;
 	vertical-align: text-top;
 }
 
@@ -174,7 +180,7 @@ td.label {
 }
 .content-help {
 	float: left;
-    padding: 0px 15px;
+    padding: 0px 14px;
 }
 
 #footer {
@@ -220,7 +226,7 @@ td.label {
 }
 
 .code-name {
-    font-size: 80%;
+    font-size: 100%;
     font-style: italic;
     font-weight: bold;
     color: #6600b9;
@@ -251,7 +257,7 @@ td.label {
     min-height: 45px;
 }
 p.info-tip-text {
-    font-size: 90%;
+    font-size: 100%;
 }
 
 .screen-shot {
