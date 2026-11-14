@@ -112,14 +112,18 @@ td, th {
     border: 1px solid #777;
     padding: 4px 8px;
     text-align: left;
+    vertical-align: middle;
 }
 th {
     background-color: rgb(180, 225, 255);
     font-weight: bold;
 }
-td.key-combo {
-    text-align: center;
-    width: 68px;
+td.key-combo-stack > .key-combo {
+    display: block;
+}
+td.key-combo-stack > .key-combo + .key-combo {
+    /* Match the vertical padding at each edge of the cell. */
+    margin-top: 4px;
 }
 td.label {
     font-size:80%;
